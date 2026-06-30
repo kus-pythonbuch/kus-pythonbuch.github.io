@@ -1,3 +1,14 @@
 site_name: Python Unterlagen
+
 theme:
   name: material
+
+nav:
+  - Start: index.md
+  - Einführung: einfuehrung.md
+  - Variablen und Datentypen: variablen-und-datentypen.md
+  - Bedingungen: bedingungen.md
+  - if-Anweisung: if-anweisung.md
+  - Schleifen: schleifen.md
+  - while-Schleife: while-schleife.md
+  - Funktionen: funktionen.md

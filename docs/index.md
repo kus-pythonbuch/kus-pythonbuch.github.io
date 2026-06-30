@@ -1,17 +1,14 @@
-# Welcome to MkDocs
+# Python Unterlagen
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+Willkommen zu den Python-Unterlagen für Einführung in Programmierung.
 
-## Commands
+## Kapitel
 
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
+1. Einführung
+2. Befehle
+3. Variablen und Datentypen
+4. Bedingungen
+5. if-Anweisung
+6. Schleifen
+7. while-Schleife
+8. Funktionen
