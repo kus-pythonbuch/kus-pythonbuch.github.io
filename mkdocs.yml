@@ -7,8 +7,11 @@ nav:
   - Start: index.md
   - Einführung: einfuehrung.md
   - Variablen und Datentypen: variablen-und-datentypen.md
+  - for-Schleife: schleifen.md
+  - Funktionen ohne Rückgabewert: funktionen-ohne-rueckgabewert.md
   - Bedingungen: bedingungen.md
-  - if-Anweisung: if-anweisung.md
-  - Schleifen: schleifen.md
+  - Verzweigung: verzweigung.md
   - while-Schleife: while-schleife.md
-  - Funktionen: funktionen.md
+  - Funktionen mit Rückgabewert: funktionen.md
+  - Listen: listen.md
+  - Dictionaries: dictionaries.md
