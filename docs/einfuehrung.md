@@ -18,7 +18,6 @@ Ein **Algorithmus** ist eine präzise Anleitung zur Lösung eines Problems oder 
 
 Auch im Alltag begegnen uns Algorithmen, zum Beispiel:
 
-- ein Kochrezept,
 - eine Anleitung zum Zusammenbau eines Regals,
 - eine Gebrauchsanweisung.
 
@@ -380,3 +379,5 @@ Achte dabei darauf,
 > - Ein **Modul** stellt zusätzliche Funktionen und Befehle bereit.
 > - **Kommentare** helfen Menschen, Programme zu lesen und zu verstehen.
 > - **Debugging** bedeutet, Fehler systematisch zu suchen und zu beheben.
+
+> 📄 [Kapitel als PDF herunterladen](00_einfuehrung_python.pdf)
