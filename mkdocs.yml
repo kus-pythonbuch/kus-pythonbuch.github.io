@@ -15,3 +15,7 @@ nav:
   - Funktionen mit Rückgabewert: funktionen.md
   - Listen: listen.md
   - Dictionaries: dictionaries.md
+
+plugins:
+  - search
+  - with-pdf
