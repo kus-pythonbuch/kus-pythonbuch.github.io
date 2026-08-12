@@ -380,4 +380,4 @@ Achte dabei darauf,
 > - **Kommentare** helfen Menschen, Programme zu lesen und zu verstehen.
 > - **Debugging** bedeutet, Fehler systematisch zu suchen und zu beheben.
 
-> 📄 [Kapitel als PDF herunterladen](00_einfuehrung_python.pdf)
+> 📄 [Kapitel als PDF herunterladen]
