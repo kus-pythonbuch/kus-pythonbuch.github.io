@@ -16,6 +16,3 @@ nav:
   - Listen: listen.md
   - Dictionaries: dictionaries.md
 
-plugins:
-  - search
-  - with-pdf
