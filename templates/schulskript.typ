@@ -316,4 +316,22 @@ $endif$
 // Dokumentinhalt
 // ========================================
 
+
+#let blockquote(body) = block(
+  width: 100%,
+  fill: light-blue,
+  stroke: (
+    left: 3pt + primary,
+  ),
+  radius: 5pt,
+  inset: (
+    left: 12pt,
+    right: 12pt,
+    top: 9pt,
+    bottom: 9pt,
+  ),
+  above: 0.8em,
+  below: 0.8em,
+  body,
+)
 $body$
