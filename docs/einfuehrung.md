@@ -1,3 +1,11 @@
+---
+title: "Einführung ins Programmieren mit Python"
+subtitle: "Grundlagen der Informatik"
+author: "Kantonsschule Uster"
+date: "2026/27"
+lang: de
+---
+
 # Einführung ins Programmieren mit Python
 
 ## Lernziele
@@ -10,6 +18,8 @@ Nach diesem Kapitel kannst du …
 - Kommentare in Python sinnvoll einsetzen.
 - einfache Fehler in Programmen erkennen und systematisch suchen.
 
+
+[📄 Kapitel als PDF herunterladen](assets/pdf/einfuehrung.pdf)
 ---
 
 ## Was ist ein Algorithmus?

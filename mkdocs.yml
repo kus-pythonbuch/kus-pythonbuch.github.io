@@ -2,6 +2,7 @@ site_name: Python Unterlagen
 
 theme:
   name: material
+  language: de
 
 nav:
   - Start: index.md
