@@ -1,9 +1,10 @@
 ---
 title: "Einführung ins Programmieren mit Python"
 subtitle: "Grundlagen der Informatik"
-author: "Kantonsschule Uster"
-date: "2026/27"
-lang: de
+author:
+  - "Theresa Luternauer"
+  - "Julia Imhof"
+date: "HS 2026/27"
 ---
 
 # Einführung ins Programmieren mit Python
