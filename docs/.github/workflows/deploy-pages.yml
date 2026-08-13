@@ -1,0 +1,90 @@
+name: MkDocs mit PDF deployen
+
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository laden
+        uses: actions/checkout@v4
+
+      - name: Python einrichten
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: MkDocs installieren
+        run: |
+          pip install mkdocs mkdocs-material
+
+      - name: Pandoc installieren
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc curl xz-utils
+
+      - name: Typst installieren
+        run: |
+          VERSION=$(curl -s https://api.github.com/repos/typst/typst/releases/latest | \
+            grep '"tag_name":' | cut -d'"' -f4)
+
+          echo "Installiere Typst $VERSION"
+
+          curl -L \
+            "https://github.com/typst/typst/releases/download/$VERSION/typst-x86_64-unknown-linux-musl.tar.xz" \
+            -o typst.tar.xz
+
+          tar -xf typst.tar.xz
+
+          sudo mv typst-x86_64-unknown-linux-musl/typst /usr/local/bin/typst
+
+          typst --version
+
+      - name: PDF-Ordner erstellen
+        run: |
+          mkdir -p docs/assets/pdf
+
+      - name: PDFs erstellen
+        run: |
+          pandoc docs/einfuehrung.md \
+            -o docs/assets/pdf/einfuehrung.pdf \
+            --pdf-engine=typst
+
+      - name: MkDocs bauen
+        run: |
+          mkdocs build --strict
+
+      - name: GitHub Pages konfigurieren
+        uses: actions/configure-pages@v5
+
+      - name: Pages-Artefakt hochladen
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+
+    runs-on: ubuntu-latest
+    needs: build
+
+    steps:
+      - name: GitHub Pages deployen
+        id: deployment
+        uses: actions/deploy-pages@v4
