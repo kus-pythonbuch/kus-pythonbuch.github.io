@@ -357,25 +357,6 @@ Untersuche die beiden Turtle-Programme oben, ohne sie auszuführen.
 3. Markiere die Endposition der Turtle.
 4. Zeichne ein, in welche Richtung die Turtle am Schluss schaut.
 
----
-
-## Aufgabe 2 – Programme ausführen
-
-Führe die beiden Programme in CodeExpert aus und vergleiche die Ausgabe mit deinen Zeichnungen.
-
-Falls deine Vorhersage nicht korrekt war, beschreibe kurz, worin dein Überlegungsfehler lag.
-
----
-
-## Aufgabe 3 – Turtle-Grundlagen
-
-Bearbeite in CodeExpert die ersten drei Aufgaben zu den Turtle-Grundlagen.
-
-Achte dabei darauf,
-
-- deinen Code übersichtlich zu schreiben,
-- Fehlermeldungen sorgfältig zu lesen,
-- und dein Programm nach Änderungen erneut zu testen.
 
 ---
 

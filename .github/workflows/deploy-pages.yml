@@ -53,6 +53,16 @@ jobs:
           sudo mv typst-x86_64-unknown-linux-musl/typst /usr/local/bin/typst
 
           typst --version
+      
+      - name: Schriften installieren
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-jetbrains-mono
+          wget -q https://github.com/adobe-fonts/source-sans/releases/download/3.052R/OTF-source-sans-3.052R.zip
+          unzip -q OTF-source-sans-3.052R.zip -d source-sans
+          mkdir -p ~/.local/share/fonts
+          cp source-sans/OTF/*.otf ~/.local/share/fonts/
+          fc-cache -f -v
 
       - name: PDF-Ordner erstellen
         run: |
@@ -62,7 +72,9 @@ jobs:
         run: |
           pandoc docs/einfuehrung.md \
             -o docs/assets/pdf/einfuehrung.pdf \
-            --pdf-engine=typst
+            --pdf-engine=typst \
+            --template=templates/schulskript.typ \
+            --lua-filter=filters/remove-pdf-download.lua
 
       - name: MkDocs bauen
         run: |
