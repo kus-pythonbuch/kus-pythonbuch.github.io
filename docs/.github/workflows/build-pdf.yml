@@ -1,0 +1,62 @@
+name: PDF erstellen
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "docs/**/*.md"
+      - ".github/workflows/build-pdf.yml"
+
+  workflow_dispatch:
+
+jobs:
+  build-pdf:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Repository laden
+        uses: actions/checkout@v4
+
+      - name: Pandoc installieren
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y pandoc curl xz-utils
+
+      - name: Typst installieren
+        run: |
+          VERSION=$(curl -s https://api.github.com/repos/typst/typst/releases/latest | \
+            grep '"tag_name":' | cut -d'"' -f4)
+
+          echo "Typst-Version: $VERSION"
+
+          curl -L \
+            "https://github.com/typst/typst/releases/download/$VERSION/typst-x86_64-unknown-linux-musl.tar.xz" \
+            -o typst.tar.xz
+
+          tar -xf typst.tar.xz
+
+          sudo mv typst-x86_64-unknown-linux-musl/typst /usr/local/bin/typst
+
+          typst --version
+
+      - name: Versionen prüfen
+        run: |
+          pandoc --version
+          typst --version
+
+      - name: PDF-Ordner erstellen
+        run: |
+          mkdir -p docs/assets/pdf
+
+      - name: Einführung als PDF erstellen
+        run: |
+          pandoc docs/einfuehrung.md \
+            -o docs/assets/pdf/einfuehrung.pdf \
+            --pdf-engine=typst
+
+      - name: PDF als Artefakt speichern
+        uses: actions/upload-artifact@v4
+        with:
+          name: einfuehrung-pdf
+          path: docs/assets/pdf/einfuehrung.pdf
