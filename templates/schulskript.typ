@@ -334,4 +334,9 @@ $endif$
   below: 0.8em,
   body,
 )
+
+#let horizontalrule = line(
+  length: 100%,
+  stroke: 0.6pt + border-gray,
+)
 $body$
