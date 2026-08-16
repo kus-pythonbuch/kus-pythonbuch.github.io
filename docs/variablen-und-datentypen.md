@@ -413,3 +413,13 @@ temperatur = 21.5
 > - **Sprechende Variablennamen** machen Programme verständlicher.
 > - Werte besitzen unterschiedliche **Datentypen**, beispielsweise `int`, `float`, `str` und `bool`.
 > - Der Datentyp bestimmt, wie Python einen Wert interpretiert und verarbeitet.
+
+
+---
+
+# Programmieraufgaben
+
+Unter folgendem Link sind die Programmieraufgaben in CodeExpert zu finden:
+
+[Variablen-Basic](https://cxedu.ethz.ch/print/sfkwicx3/AS26/peiS4gqmfNnbFNRqt)  
+[Variablen_Advanced](https://cxedu.ethz.ch/print/sfkwicx3/AS26/t4pLKbhkJxQTojFGq)

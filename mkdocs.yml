@@ -17,3 +17,7 @@ nav:
   - Listen: listen.md
   - Dictionaries: dictionaries.md
 
+  
+markdown_extensions:
+  - admonition
+  - attr_list

@@ -61,6 +61,10 @@ Python wurde Anfang der 1990er-Jahre von Guido van Rossum entwickelt. Der Name b
 
 Python wird in vielen unterschiedlichen Bereichen eingesetzt. Dazu gehören unter anderem Webanwendungen, Datenverarbeitung, Automatisierung und Machine Learning.
 
+[![Gründer von Python: Guido van Rossum](assets/images/rossum.png){ width="400" }](assets/images/rossum.png)
+
+*Gründer von Python: Guido van Rossum mit dem bekannten Logo von Python*
+
 ---
 
 ## Syntax und Semantik
@@ -111,6 +115,9 @@ Enthält ein Programm einen Syntaxfehler, zeigt die Entwicklungsumgebung normale
 
 Eine **Entwicklungsumgebung** ist ein Programm oder eine Webseite, in der Programmcode geschrieben, ausgeführt und getestet werden kann.
 
+[![Beispiel einer Fehlermeldung bei Turtle](assets/images/Fehler_Turtle.png){ width="400" }](assets/images/Fehler_Turtle.png)
+
+*Fehlermeldung bei einem Turtle-Programm*
 ---
 
 # Programmieren mit Python Turtle
@@ -288,6 +295,36 @@ Solche Fehler werden häufig als **Bugs** bezeichnet. Das systematische Suchen u
 
 3. **Fehler beheben und testen**  
    Ändere den Code und prüfe erneut, ob das Programm nun korrekt funktioniert.
+   
+---
+
+## Hilfsmittel beim Debugging
+
+### Fehlermeldungen lesen
+
+Bei Syntaxfehlern zeigt Python eine Fehlermeldung an. Sie enthält häufig eine Zeilennummer und einen Hinweis auf die Stelle, an der der Fehler erkannt wurde.
+
+> 👉 **Tipp:** Prüfe zuerst die angegebene Zeile und danach auch die unmittelbar davorliegende Zeile.
+
+   [![Beispiel einer Fehlermeldung, oft wird die korrekte Zeile des Fehlers angegeben](assets/images/Fehler_Python.png){ width="400" }](assets/images/Fehler_Python.png)
+
+   *Beispiel einer Fehlermeldung, oft wird die korrekte Zeile des Fehlers angegeben*
+
+
+### `print()` zum Testen
+
+Mit `print()` können Zwischenwerte ausgegeben werden:
+
+```python
+print("Variable x =", x)
+```
+
+Damit lässt sich prüfen, welchen Wert eine Variable gerade besitzt oder ob ein bestimmter Programmteil erreicht wurde.
+
+### Debugger
+
+Viele Entwicklungsumgebungen besitzen einen **Debugger**. Damit kann ein Programm Schritt für Schritt ausgeführt werden. So lässt sich beobachten, welche Anweisungen ausgeführt werden und wie sich Werte verändern.
+
 
 ---
 
@@ -320,29 +357,6 @@ Der Befehl ist korrekt geschrieben. Soll die Turtle jedoch für ein Quadrat um 9
 > 💡 **Merke:**  
 > Ein Programm kann syntaktisch korrekt sein und trotzdem ein falsches Ergebnis liefern.
 
----
-
-## Hilfsmittel beim Debugging
-
-### Fehlermeldungen lesen
-
-Bei Syntaxfehlern zeigt Python eine Fehlermeldung an. Sie enthält häufig eine Zeilennummer und einen Hinweis auf die Stelle, an der der Fehler erkannt wurde.
-
-> 👉 **Tipp:** Prüfe zuerst die angegebene Zeile und danach auch die unmittelbar davorliegende Zeile.
-
-### `print()` zum Testen
-
-Mit `print()` können Zwischenwerte ausgegeben werden:
-
-```python
-print("Variable x =", x)
-```
-
-Damit lässt sich prüfen, welchen Wert eine Variable gerade besitzt oder ob ein bestimmter Programmteil erreicht wurde.
-
-### Debugger
-
-Viele Entwicklungsumgebungen besitzen einen **Debugger**. Damit kann ein Programm Schritt für Schritt ausgeführt werden. So lässt sich beobachten, welche Anweisungen ausgeführt werden und wie sich Werte verändern.
 
 ---
 
@@ -372,3 +386,12 @@ Untersuche die beiden Turtle-Programme oben, ohne sie auszuführen.
 > - **Kommentare** helfen Menschen, Programme zu lesen und zu verstehen.
 > - **Debugging** bedeutet, Fehler systematisch zu suchen und zu beheben.
 
+---
+
+# Programmieraufgaben
+
+Unter folgendem Link sind die Programmieraufgaben in CodeExpert zu finden:
+
+[Turtle_Basic](https://cxedu.ethz.ch/print/sfkwicx3/AS26/N44uPNZ7Q4pjgZPcs)
+ 
+[Turtle_Advanced](https://cxedu.ethz.ch/print/sfkwicx3/AS26/ewB4HzS4xAtxTCiEK)
