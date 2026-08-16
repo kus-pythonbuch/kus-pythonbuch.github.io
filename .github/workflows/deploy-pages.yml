@@ -70,11 +70,22 @@ jobs:
 
       - name: PDFs erstellen
         run: |
-          pandoc docs/einfuehrung.md \
-            -o docs/assets/pdf/einfuehrung.pdf \
-            --pdf-engine=typst \
-            --template=templates/schulskript.typ \
-            --lua-filter=filters/remove-pdf-download.lua
+          mkdir -p docs/assets/pdf
+
+          for file in docs/*.md; do
+            filename=$(basename "$file" .md)
+
+            if [ "$filename" != "index" ]; then
+              echo "Erstelle PDF: $filename"
+
+              pandoc "$file" \
+                -o "docs/assets/pdf/$filename.pdf" \
+                --pdf-engine=typst \
+                --template=templates/schulskript.typ \
+                --lua-filter=filters/remove-pdf-download.lua \
+                --resource-path=docs
+            fi
+          done
 
       - name: MkDocs bauen
         run: |
