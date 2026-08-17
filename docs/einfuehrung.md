@@ -118,6 +118,7 @@ Eine **Entwicklungsumgebung** ist ein Programm oder eine Webseite, in der Progra
 [![Beispiel einer Fehlermeldung bei Turtle](assets/images/Fehler_Turtle.png)](assets/images/Fehler_Turtle.png)
 
 *Fehlermeldung bei einem Turtle-Programm*
+
 ---
 
 # Programmieren mit Python Turtle
