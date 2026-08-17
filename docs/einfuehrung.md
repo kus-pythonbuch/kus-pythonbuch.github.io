@@ -61,7 +61,7 @@ Python wurde Anfang der 1990er-Jahre von Guido van Rossum entwickelt. Der Name b
 
 Python wird in vielen unterschiedlichen Bereichen eingesetzt. Dazu gehören unter anderem Webanwendungen, Datenverarbeitung, Automatisierung und Machine Learning.
 
-[![Gründer von Python: Guido van Rossum](assets/images/rossum.png){ width="400" }](assets/images/rossum.png)
+[![Gründer von Python: Guido van Rossum](assets/images/rossum.png)](assets/images/rossum.png)
 
 *Gründer von Python: Guido van Rossum mit dem bekannten Logo von Python*
 
@@ -115,7 +115,7 @@ Enthält ein Programm einen Syntaxfehler, zeigt die Entwicklungsumgebung normale
 
 Eine **Entwicklungsumgebung** ist ein Programm oder eine Webseite, in der Programmcode geschrieben, ausgeführt und getestet werden kann.
 
-[![Beispiel einer Fehlermeldung bei Turtle](assets/images/Fehler_Turtle.png){ width="400" }](assets/images/Fehler_Turtle.png)
+[![Beispiel einer Fehlermeldung bei Turtle](assets/images/Fehler_Turtle.png)](assets/images/Fehler_Turtle.png)
 
 *Fehlermeldung bei einem Turtle-Programm*
 ---
@@ -306,7 +306,7 @@ Bei Syntaxfehlern zeigt Python eine Fehlermeldung an. Sie enthält häufig eine 
 
 > 👉 **Tipp:** Prüfe zuerst die angegebene Zeile und danach auch die unmittelbar davorliegende Zeile.
 
-   [![Beispiel einer Fehlermeldung, oft wird die korrekte Zeile des Fehlers angegeben](assets/images/Fehler_Python.png){ width="400" }](assets/images/Fehler_Python.png)
+   [![Beispiel einer Fehlermeldung, oft wird die korrekte Zeile des Fehlers angegeben](assets/images/Fehler_Python.png)](assets/images/Fehler_Python.png)
 
    *Beispiel einer Fehlermeldung, oft wird die korrekte Zeile des Fehlers angegeben*
 
