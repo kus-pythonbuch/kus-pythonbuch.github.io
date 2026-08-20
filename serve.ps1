@@ -9,7 +9,7 @@ if (!(Test-Path $pdfFolder)) {
 Get-ChildItem "docs" -Filter "*.md" | ForEach-Object {
 
     # Startseite nicht als PDF erzeugen
-    if ($_.Name -ne "index.md") {
+    if ($_.Name -ne "index.md" or $_.Name -ne "cheatsheet.md") {
 
         $inputFile = $_.FullName
         $outputFile = Join-Path $pdfFolder ($_.BaseName + ".pdf")

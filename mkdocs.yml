@@ -5,6 +5,7 @@ theme:
   language: de
 
 nav:
+  - Cheatsheet: cheatsheet.md
   - Start: index.md
   - Einführung: einfuehrung.md
   - Variablen und Datentypen: variablen-und-datentypen.md
