@@ -138,7 +138,7 @@ t = turtle.Turtle()
 t.forward(60)
 ```
 
-### `import turtle`
+### Import
 
 ```python
 import turtle

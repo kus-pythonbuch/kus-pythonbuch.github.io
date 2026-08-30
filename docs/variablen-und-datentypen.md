@@ -219,10 +219,10 @@ Variablen können unterschiedliche Arten von Daten speichern. Python unterscheid
 
 | Datentyp | Bedeutung | Beispiel |
 |---|---|---|
-| `int` | ganze Zahl | `42` |
-| `float` | Kommazahl | `3.14` |
-| `str` | Text | `"Hallo"` |
-| `bool` | Wahrheitswert | `True` oder `False` |
+| `int` | aus engl. integer: ganze Zahl | `42` |
+| `float` | aus engl. floating point number: Kommazahl | `3.14` |
+| `str` | aus engl. string: Text | `"Hallo"` oder `'Hallo'` |
+| `bool` | steht für boolean (Wahrheitswert) | `True` oder `False` |
 
 Der Datentyp bestimmt, wie Python einen Wert interpretiert und welche Operationen damit möglich sind.
 
