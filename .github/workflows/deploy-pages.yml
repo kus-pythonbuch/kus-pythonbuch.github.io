@@ -79,7 +79,7 @@ jobs:
                 -o "assets/pdf/$filename.pdf" \
                 --pdf-engine=typst \
                 --template=../templates/schulskript.typ \
-                --lua-filter=../filters/remove-pdf-download.lua
+                --lua-filter=../filters/remove-pdf-download.lua \
                 --resource-path=.
             fi
           done
