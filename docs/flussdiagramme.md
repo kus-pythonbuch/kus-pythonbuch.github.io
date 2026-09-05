@@ -140,11 +140,7 @@ positiv ist oder nicht.
 
 Zuerst kann der Ablauf festgelegt werden:
 
-1.  Zahl einlesen.
-2.  Prüfen: `zahl > 0`?
-3.  Falls `True`: `"positiv"` ausgeben.
-4.  Falls `False`: `"nicht positiv"` ausgeben.
-5.  Programm beenden.
+[![Beispiel 4](assets/images/bsp4.png)](assets/images/bsp4.png){ .flowchart }
 
 Erst danach wird daraus Python-Code:
 
