@@ -13,6 +13,7 @@ nav:
   - Funktionen ohne Rückgabewert: funktionen-ohne-rueckgabewert.md
   - Bedingungen: bedingungen.md
   - Verzweigung: verzweigung.md
+  - Flussdiagramme: flussdiagramme.md
   - while-Schleife: while-schleife.md
   - Funktionen mit Rückgabewert: funktionen.md
   - Listen: listen.md
@@ -22,3 +23,6 @@ nav:
 markdown_extensions:
   - admonition
   - attr_list
+
+extra_css:
+  - stylesheets/extra.css

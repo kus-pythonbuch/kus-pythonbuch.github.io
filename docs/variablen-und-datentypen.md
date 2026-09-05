@@ -50,6 +50,10 @@ Die Ausgabe lautet:
 > 💡 **Merke:**  
 > Eine Variable ist ein benannter Speicherplatz für einen Wert. Über ihren Namen kann im Programm auf diesen Wert zugegriffen werden.
 
+[![Variable als Platzhalter](assets/images/variable.png)](assets/images/variable.png)
+
+*Variable als Platzhalter für Werte*
+
 ---
 
 ## Werte zuweisen
@@ -213,7 +217,7 @@ maximale_punktzahl = 50
 
 ---
 
-# Datentypen
+## Datentypen
 
 Variablen können unterschiedliche Arten von Daten speichern. Python unterscheidet diese mithilfe von **Datentypen**.
 
@@ -226,7 +230,7 @@ Variablen können unterschiedliche Arten von Daten speichern. Python unterscheid
 
 Der Datentyp bestimmt, wie Python einen Wert interpretiert und welche Operationen damit möglich sind.
 
-## Ganze Zahlen – `int`
+### Ganze Zahlen – `int`
 
 Ganze Zahlen besitzen den Datentyp `int` (*integer*).
 
@@ -235,7 +239,7 @@ alter = 15
 temperatur = -3
 ```
 
-## Kommazahlen – `float`
+### Kommazahlen – `float`
 
 Zahlen mit Dezimalstellen besitzen den Datentyp `float`.
 
@@ -247,7 +251,7 @@ temperatur = 21.5
 > 💡 **Achtung:**  
 > Python verwendet bei Dezimalzahlen einen **Punkt** und kein Komma: `3.5` statt `3,5`.
 
-## Texte – `str`
+### Texte – `str`
 
 Texte werden in Python als **Strings** (`str`) bezeichnet und in Anführungszeichen geschrieben.
 
@@ -261,7 +265,7 @@ Die Werte `5` und `"5"` sehen ähnlich aus, besitzen aber unterschiedliche Daten
 > 💡 **Merke:**  
 > Texte müssen in Python in Anführungszeichen stehen.
 
-## Wahrheitswerte – `bool`
+### Wahrheitswerte – `bool`
 
 Der Datentyp `bool` kennt nur zwei mögliche Werte:
 
@@ -281,7 +285,7 @@ Wahrheitswerte werden später insbesondere bei **Bedingungen** wichtig.
 
 ---
 
-## Der Datentyp ist entscheidend
+### Der Datentyp ist entscheidend
 
 Python verarbeitet Werte abhängig von ihrem Datentyp unterschiedlich.
 
@@ -297,7 +301,7 @@ Hier ist `zahl` eine ganze Zahl (`int`), mit der gerechnet werden kann. Dagegen 
 
 ---
 
-# Kurzschreibweisen für Zuweisungen
+## Operatoren und Kurzschreibweisen für Zuweisungen
 
 Beim Programmieren werden Werte häufig verändert:
 
@@ -319,6 +323,69 @@ x += 1
 | Division | `x /= 2` | `x = x / 2` |
 | Ganzzahldivision | `x //= 2` | `x = x // 2` |
 | Modulo | `x %= 2` | `x = x % 2` |
+
+---
+
+## Werte mit `print()` ausgeben
+
+Mit der Funktion `print()` können Texte und Werte auf dem Bildschirm ausgegeben werden.
+
+Ein Text wird dabei in Anführungszeichen geschrieben:
+
+```python
+print("Hallo!")
+```
+
+Die Ausgabe lautet:
+
+```text
+Hallo!
+```
+
+Auch der Wert einer Variablen kann ausgegeben werden:
+
+```python
+alter = 15
+print(alter)
+```
+
+Ausgabe:
+
+```text
+15
+```
+
+### Texte und Variablen gemeinsam ausgeben
+
+Häufig möchte man einen längeren Satz ausgeben, der sowohl festen Text als auch Werte von Variablen enthält. Dazu können in `print()` mehrere Teile **durch Kommas getrennt** angegeben werden.
+
+```python
+name = "Lena"
+alter = 15
+
+print("Ich heisse", name, "und ich bin", alter, "Jahre alt.")
+```
+
+Die Ausgabe lautet:
+
+```text
+Ich heisse Lena und ich bin 15 Jahre alt.
+```
+
+Python setzt zwischen den einzelnen, durch Kommas getrennten Teilen automatisch ein Leerzeichen. Dabei können auch unterschiedliche Datentypen gemeinsam ausgegeben werden. Im Beispiel ist `name` ein `str` und `alter` ein `int`.
+
+!!! note "Merke"
+    Mit `print()` können mehrere Texte und Variablen gemeinsam ausgegeben werden:
+
+    ```python
+    print("Text", variable, "weiterer Text")
+    ```
+
+    Die einzelnen Teile werden durch **Kommas** getrennt. Python fügt bei der Ausgabe automatisch Leerzeichen dazwischen ein.
+
+[![Print von mehreren Werten](assets/images/print_beispiel.png)](assets/images/print_beispiel.png)
+
+*print-Ausgabe von mehreren Werten*
 
 ---
 
