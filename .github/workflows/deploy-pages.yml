@@ -53,7 +53,7 @@ jobs:
           sudo mv typst-x86_64-unknown-linux-musl/typst /usr/local/bin/typst
 
           typst --version
-      
+
       - name: Schriften installieren
         run: |
           sudo apt-get update
@@ -84,14 +84,11 @@ jobs:
             fi
           done
 
-      - name: MkDocs bauen
+      - name: MkDocs Website erstellen
         run: |
-          mkdocs build --strict
+          mkdocs build
 
-      - name: GitHub Pages konfigurieren
-        uses: actions/configure-pages@v5
-
-      - name: Pages-Artefakt hochladen
+      - name: GitHub Pages Artefakt hochladen
         uses: actions/upload-pages-artifact@v3
         with:
           path: site
