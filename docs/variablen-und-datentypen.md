@@ -388,6 +388,132 @@ Python setzt zwischen den einzelnen, durch Kommas getrennten Teilen automatisch 
 *print-Ausgabe von mehreren Werten*
 
 ---
+## Werte mit `input()` einlesen
+
+Bisher haben wir Werte direkt im Programm gespeichert:
+
+``` python
+alter = 15
+```
+
+Oft soll ein Wert aber erst während der Ausführung des Programms
+eingegeben werden. Dafür gibt es die Funktion `input()`.
+
+``` python
+name = input("Wie heisst du? ")
+print("Hallo", name)
+```
+
+Beim Ausführen des Programms erscheint die Frage:
+
+``` text
+Wie heisst du?
+```
+
+Die Eingabe wird anschliessend in der Variablen `name` gespeichert.
+
+### `input()` liefert immer einen Text
+
+Eine Eingabe mit `input()` hat zunächst **immer den Datentyp `str`**,
+auch wenn eine Zahl eingegeben wird.
+
+``` python
+alter = input("Wie alt bist du? ")
+print(type(alter))
+```
+
+Gibt man beispielsweise `15` ein, ist `alter` trotzdem ein `str` und
+keine Zahl. Der Befehl `type()` gibt den Datentyp einer Variablen zurück.
+
+!!! note "Merke" 
+    Die Funktion `input()` liefert immer einen Wert vom Datentyp **`str`**.
+
+    Soll mit der Eingabe gerechnet werden, muss sie zuerst in den passenden Datentyp umgewandelt werden.
+
+## Datentypen umwandeln -- Typecasting
+
+Das Umwandeln eines Wertes von einem Datentyp in einen anderen nennt man
+**Typecasting**.
+
+Dafür können beispielsweise `int()`, `float()` und `str()` verwendet
+werden.
+
+  Funktion    Umwandlung            Beispiel
+  ----------- --------------------- ------------------------
+  `int()`     in eine ganze Zahl    `int("15")` → `15`
+  `float()`   in eine Dezimalzahl   `float("3.5")` → `3.5`
+  `str()`     in einen Text         `str(15)` → `"15"`
+
+### Ganze Zahlen einlesen
+
+Soll eine ganze Zahl eingegeben werden, kann `input()` direkt mit
+`int()` kombiniert werden:
+
+``` python
+alter = int(input("Wie alt bist du? "))
+```
+
+Der Ablauf ist dabei:
+
+1.  `input()` liest die Eingabe als `str` ein.
+2.  `int()` wandelt den Text in eine ganze Zahl um.
+3.  Die Zahl wird in `alter` gespeichert.
+
+Nun kann damit gerechnet werden:
+
+``` python
+alter = int(input("Wie alt bist du? "))
+naechstes_alter = alter + 1
+
+print("Nächstes Jahr bist du", naechstes_alter, "Jahre alt.")
+```
+
+### Dezimalzahlen einlesen
+
+Für Zahlen mit Nachkommastellen wird `float()` verwendet:
+
+``` python
+groesse = float(input("Wie gross bist du in Metern? "))
+```
+
+Eine Eingabe wie `1.72` wird dadurch als `float` gespeichert.
+
+!!! warning "Dezimalzahlen in Python" 
+    Dezimalzahlen werden in Python mit einem **Punkt** geschrieben:
+
+    ```text
+    1.72
+    ```
+
+    Eine Eingabe mit Komma wie `1,72` kann nicht direkt mit `float()` umgewandelt werden.
+
+### Texte einlesen
+
+Bei Texten ist keine Umwandlung notwendig:
+
+``` python
+name = input("Wie heisst du? ")
+```
+
+`name` ist automatisch vom Datentyp `str`.
+
+Man könnte zwar auch schreiben:
+
+``` python
+name = str(input("Wie heisst du? "))
+```
+
+Das ist aber unnötig, da `input()` bereits einen `str` liefert.
+
+!!! note "Merke" 
+    Welche Umwandlung benötigt wird, hängt davon ab, was mit der Eingabe gemacht werden soll:
+
+    ```python
+    name = input("Name: ")                 # str
+    alter = int(input("Alter: "))          # int
+    groesse = float(input("Grösse: "))     # float
+    ```
+---
 
 # Denkaufgaben
 
@@ -466,6 +592,37 @@ meine zahl = 7
 temperatur = 21.5
 3 = x
 ```
+
+## Aufgabe 6 – Datentypen bestimmen
+Welchen Datentyp haben die Variablen nach diesen Anweisungen?
+
+``` python
+a = input("Eingabe: ")
+b = int(input("Eingabe: "))
+c = float(input("Eingabe: "))
+```
+
+
+## Aufgabe 7 – Fehler bestimmen 
+
+Erkläre, weshalb folgendes Programm nicht wie erwartet funktioniert:
+
+``` python
+alter = input("Wie alt bist du? ")
+naechstes_alter = alter + 1
+```
+
+## Aufgabe 8 – Code ergänzen
+Ergänze das Programm so, dass zwei ganze Zahlen eingelesen und anschliessend addiert werden:
+
+``` python
+zahl1 = ...
+zahl2 = ...
+
+summe = zahl1 + zahl2
+print("Summe:", summe)
+```
+
 
 ---
 

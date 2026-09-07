@@ -23,6 +23,8 @@ nav:
 markdown_extensions:
   - admonition
   - attr_list
+  - pymdownx.details
+  - pymdownx.superfences
 
 extra_css:
   - stylesheets/extra.css
