@@ -45,7 +45,7 @@ Die Ausgabe lautet:
 15
 ```
 
-> 💡 **Merke:**\
+> 💡 **Merke:**
 > Eine Variable ist ein benannter Speicherplatz für einen Wert. Über ihren Namen kann im Programm auf diesen Wert zugegriffen werden. [![Variable als Platzhalter](assets/images/variable.png)](assets/images/variable.png)
 
 *Variable als Platzhalter für Werte*
@@ -87,7 +87,7 @@ x = x + 4
 
 Nach der ersten Zeile gilt `x → 11`. In der zweiten Zeile wird zuerst die rechte Seite ausgewertet: `x + 4 → 11 + 4 → 15`. Anschliessend wird der bisherige Wert von `x` durch `15` ersetzt.
 
-> 💡 **Merke:**\
+> 💡 **Merke:**
 > Bei einer Zuweisung wird immer zuerst die **rechte Seite berechnet**. Das Ergebnis wird danach in der Variable auf der **linken Seite gespeichert**.
 
 ### Unterschied zur Mathematik
@@ -258,7 +258,7 @@ text = "5"
 
 Die Werte `5` und `"5"` sehen ähnlich aus, besitzen aber unterschiedliche Datentypen: `5` ist eine Zahl, `"5"` ist ein Text.
 
-> 💡 **Merke:**\
+> 💡 **Merke:**
 > Texte müssen in Python in Anführungszeichen stehen.
 
 ### Wahrheitswerte -- `bool`
@@ -371,7 +371,7 @@ Ich heisse Lena und ich bin 15 Jahre alt.
 Python setzt zwischen den einzelnen, durch Kommas getrennten Teilen automatisch ein Leerzeichen. Dabei können auch unterschiedliche Datentypen gemeinsam ausgegeben werden. Im Beispiel ist `name` ein `str` und `alter` ein `int`.
 
 > 💡 **Merke:**
-> Mit `print()` können mehrere Texte und Variablen gemeinsam ausgegeben werden.\
+> Mit `print()` können mehrere Texte und Variablen gemeinsam ausgegeben werden.
 > Die einzelnen Teile werden durch **Kommas** getrennt. Python fügt bei der Ausgabe automatisch Leerzeichen dazwischen ein.
 >
 > `print("Text", variable, "weiterer Text")`
@@ -416,8 +416,8 @@ print(type(alter))
 
 Gibt man beispielsweise `15` ein, ist `alter` trotzdem ein `str` und keine Zahl. Der Befehl `type()` gibt den Datentyp einer Variablen zurück.
 
-> 💡 **Merke:**\
-> Die Funktion `input()` liefert immer einen Wert vom Datentyp **`str`**.\
+> 💡 **Merke:**
+> Die Funktion `input()` liefert immer einen Wert vom Datentyp **`str`**.
 > Soll mit der Eingabe gerechnet werden, muss sie zuerst in den passenden Datentyp umgewandelt werden.
 
 ## Datentypen umwandeln -- Typecasting
