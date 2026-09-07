@@ -1,3 +1,12 @@
+---
+title: "Flussdiagramme"
+subtitle: "Programmieren mit Python"
+author:
+  - "Theresa Luternauer"
+  - "Julia Imhof"
+date: "HS 2026/27"
+---
+
 # Flussdiagramme
 
 Ein Programm besteht aus Anweisungen, die in einer bestimmten
