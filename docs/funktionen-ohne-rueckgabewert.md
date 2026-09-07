@@ -1,3 +1,10 @@
+---
+title: "Funktionen ohne Rückgabewert"
+subtitle: "Programmieren mit Python"
+author: "Theresa Luternauer & Julia Imhof"
+date: "HS 2026/27"
+---
+
 # Funktionen ohne Rückgabewert
 
 ## Worum geht es?

@@ -1,9 +1,7 @@
 ---
 title: "Flussdiagramme"
 subtitle: "Programmieren mit Python"
-author:
-  - "Theresa Luternauer"
-  - "Julia Imhof"
+author: "Theresa Luternauer & Julia Imhof"
 date: "HS 2026/27"
 ---
 
