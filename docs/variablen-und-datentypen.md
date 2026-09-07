@@ -1,10 +1,8 @@
 ---
-author:
-- Theresa Luternauer
-- Julia Imhof
-date: HS 2026/27
-subtitle: Programmieren mit Python
-title: Variablen und Datentypen
+title: "Variablen und Datentypen"
+subtitle: "Programmieren mit Python"
+author: "Theresa Luternauer & Julia Imhof"
+date: "HS 2026/27"
 ---
 
 # Variablen und Datentypen
@@ -210,12 +208,12 @@ seitenlaenge = 100
 maximale_punktzahl = 50
 ```
 
-> 💡 **Merke:**\
+> 💡 **Merke:**
 > Gute Variablennamen machen ein Programm leichter lesbar und verständlich.
 
 ------------------------------------------------------------------------
 
-# Datentypen
+## Datentypen
 
 Variablen können unterschiedliche Arten von Daten speichern. Python unterscheidet diese mithilfe von **Datentypen**.
 
@@ -228,7 +226,7 @@ Variablen können unterschiedliche Arten von Daten speichern. Python unterscheid
 
 Der Datentyp bestimmt, wie Python einen Wert interpretiert und welche Operationen damit möglich sind.
 
-## Ganze Zahlen -- `int`
+### Ganze Zahlen -- `int`
 
 Ganze Zahlen besitzen den Datentyp `int` (*integer*).
 
@@ -237,7 +235,7 @@ alter = 15
 temperatur = -3
 ```
 
-## Kommazahlen -- `float`
+### Kommazahlen -- `float`
 
 Zahlen mit Dezimalstellen besitzen den Datentyp `float`.
 
@@ -249,7 +247,7 @@ temperatur = 21.5
 > 💡 **Achtung:**
 > Python verwendet bei Dezimalzahlen einen **Punkt** und kein Komma: `3.5` statt `3,5`.
 
-## Texte -- `str`
+### Texte -- `str`
 
 Texte werden in Python als **Strings** (`str`) bezeichnet und in Anführungszeichen geschrieben.
 
@@ -263,7 +261,7 @@ Die Werte `5` und `"5"` sehen ähnlich aus, besitzen aber unterschiedliche Daten
 > 💡 **Merke:**\
 > Texte müssen in Python in Anführungszeichen stehen.
 
-## Wahrheitswerte -- `bool`
+### Wahrheitswerte -- `bool`
 
 Der Datentyp `bool` kennt nur zwei mögliche Werte:
 
@@ -283,7 +281,7 @@ Wahrheitswerte werden später insbesondere bei **Bedingungen** wichtig.
 
 ------------------------------------------------------------------------
 
-## Der Datentyp ist entscheidend
+### Der Datentyp ist entscheidend
 
 Python verarbeitet Werte abhängig von ihrem Datentyp unterschiedlich.
 
@@ -294,12 +292,12 @@ print(zahl * zahl)
 
 Hier ist `zahl` eine ganze Zahl (`int`), mit der gerechnet werden kann. Dagegen ist `"5"` ein String. Nicht jede Rechenoperation, die mit Zahlen möglich ist, ist deshalb auch mit Texten sinnvoll oder erlaubt.
 
-> 💡 **Merke:**\
+> 💡 **Merke:**
 > Nicht nur der gespeicherte Wert ist wichtig, sondern auch sein **Datentyp**.
 
 ------------------------------------------------------------------------
 
-# Kurzschreibweisen für Zuweisungen
+## Kurzschreibweisen für Zuweisungen
 
 Beim Programmieren werden Werte häufig verändert:
 
@@ -372,7 +370,7 @@ Ich heisse Lena und ich bin 15 Jahre alt.
 
 Python setzt zwischen den einzelnen, durch Kommas getrennten Teilen automatisch ein Leerzeichen. Dabei können auch unterschiedliche Datentypen gemeinsam ausgegeben werden. Im Beispiel ist `name` ein `str` und `alter` ein `int`.
 
-> 💡 **Merke:**\
+> 💡 **Merke:**
 > Mit `print()` können mehrere Texte und Variablen gemeinsam ausgegeben werden.\
 > Die einzelnen Teile werden durch **Kommas** getrennt. Python fügt bei der Ausgabe automatisch Leerzeichen dazwischen ein.
 >
@@ -382,7 +380,7 @@ Python setzt zwischen den einzelnen, durch Kommas getrennten Teilen automatisch 
 
 *print-Ausgabe von mehreren Werten*
 
----
+---------------------------------------------------------------
 
 ## Werte mit `input()` einlesen
 
