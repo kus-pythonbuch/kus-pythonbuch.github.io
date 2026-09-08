@@ -153,7 +153,7 @@ a = b / 7
 
 `undef` bedeutet, dass einer Variable noch kein Wert zugewiesen wurde.
 
-> 💡 **Tipp:**\
+> 💡 **Tipp:**
 > Wenn du ein Programm von Hand analysierst, führe die Anweisungen **von oben nach unten** aus und aktualisiere nach jeder Zuweisung deine Variablentabelle.
 
 ------------------------------------------------------------------------

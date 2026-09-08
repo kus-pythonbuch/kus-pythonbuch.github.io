@@ -23,7 +23,7 @@ Nach diesem Kapitel kannst du …
 
 ---
 
-## 1. Warum brauchen wir Wiederholungen?
+## Warum brauchen wir Wiederholungen?
 
 Wiederholungen sind ein wichtiger Bestandteil fast aller Programmiersprachen. Sie ermöglichen:
 
@@ -76,7 +76,7 @@ for i in range(4):
 
 ---
 
-## 2. Aufbau einer `for`-Schleife
+## Aufbau einer `for`-Schleife
 
 Eine `for`-Schleife hat folgenden Aufbau:
 
@@ -128,12 +128,12 @@ for i in range(3):
 print("wird nur einmal ausgeführt")
 ```
 
-!!! warning "Einrückung beachten"
-    Nach dem Doppelpunkt müssen alle Anweisungen eingerückt werden, die wiederholt werden sollen. Eine nicht mehr eingerückte Anweisung gehört nicht zur Schleife.
+> 💡 **Achtung:**
+> Nach dem Doppelpunkt müssen alle Anweisungen eingerückt werden, die wiederholt werden sollen. Eine nicht mehr eingerückte Anweisung gehört nicht zur Schleife.
 
 ---
 
-## 3. Die Schleifenvariable
+## Die Schleifenvariable
 
 Im folgenden Beispiel ist `i` die **Schleifenvariable**:
 
@@ -160,8 +160,8 @@ Die Schleifenvariable erhält in jedem Schleifendurchgang den nächsten Wert aus
 | 3. Durchgang | 2 |
 | 4. Durchgang | 3 |
 
-!!! note "Zählen ab 0"
-    `range(4)` erzeugt die Werte 0, 1, 2 und 3. Die Schleife hat vier Durchgänge, obwohl der letzte Wert der Schleifenvariable 3 ist.
+> 💡 **Merke: "Zählen ab 0" **  
+> `range(4)` erzeugt die Werte 0, 1, 2 und 3. Die Schleife hat vier Durchgänge, obwohl der letzte Wert der Schleifenvariable 3 ist.
 
 Der Name der Schleifenvariable kann selbst gewählt werden. Häufig werden kurze Namen wie `i` verwendet:
 
@@ -202,7 +202,7 @@ Das `_` zeigt: Die Schleife soll viermal laufen, aber der aktuelle Zahlenwert wi
 
 ---
 
-## 4. Die Funktion `range()`
+## Funktion `range()`
 
 Die Funktion `range()` liefert eine Folge ganzer Zahlen. Eine `for`-Schleife durchläuft diese Zahlen der Reihe nach.
 
@@ -214,10 +214,10 @@ range(start, stop)
 range(start, stop, schrittweite)
 ```
 
-!!! warning "Der Endwert ist nicht enthalten"
-    Der Wert `stop` gehört nie zur erzeugten Zahlenfolge. `range()` hört unmittelbar vor dem Endwert auf.
+> 💡 **Achtung: "Der Endwert ist nicht enthalten" **
+> Der Wert `stop` gehört nie zur erzeugten Zahlenfolge. `range()` hört unmittelbar vor dem Endwert auf.
 
-### 4.1 `range(stop)`
+### `range(stop)`
 
 Wird nur ein Wert angegeben, beginnt die Zahlenfolge bei 0 und zählt in Einerschritten:
 
@@ -257,7 +257,7 @@ Ausgabe:
 4
 ```
 
-### 4.2 `range(start, stop)`
+### `range(start, stop)`
 
 Mit zwei Werten wird zusätzlich der Startwert festgelegt:
 
@@ -290,7 +290,7 @@ Ausgabe:
 6
 ```
 
-### 4.3 `range(start, stop, schrittweite)`
+### `range(start, stop, schrittweite)`
 
 Mit drei Werten wird auch die Schrittweite festgelegt:
 
@@ -325,7 +325,7 @@ Ausgabe:
 14
 ```
 
-### 4.4 Rückwärts zählen
+### Rückwärts zählen
 
 Für eine rückwärts laufende Zahlenfolge wird eine negative Schrittweite verwendet:
 
@@ -361,10 +361,10 @@ Ausgabe:
 Start!
 ```
 
-!!! warning "Richtung und Schrittweite müssen zusammenpassen"
-    Soll von einer grösseren zu einer kleineren Zahl gezählt werden, muss die Schrittweite negativ sein. `range(5, 0)` liefert keine Werte, weil die Standardschrittweite `+1` vom Endwert wegführt.
+> 💡 **Achtung: "Richtung und Schrittweite müssen zusammenpassen" **
+> Soll von einer grösseren zu einer kleineren Zahl gezählt werden, muss die Schrittweite negativ sein. `range(5, 0)` liefert keine Werte, weil die Standardschrittweite `+1` vom Endwert wegführt.
 
-### 4.5 Die drei Formen im Vergleich
+### Die drei Formen im Vergleich
 
 | Form | Startwert | Endwert | Schrittweite |
 |---|---:|---:|---:|
@@ -372,15 +372,19 @@ Start!
 | `range(start, stop)` | angegeben | nicht enthalten | 1 |
 | `range(start, stop, schrittweite)` | angegeben | nicht enthalten | angegeben |
 
-!!! tip "So bestimmst du eine `range()`-Folge"
-    1. Schreibe den Startwert auf.
-    2. Addiere jeweils die Schrittweite.
-    3. Stoppe, bevor der Endwert erreicht oder überschritten wird.
-    4. Bei einer negativen Schrittweite stoppst du, bevor der Endwert erreicht oder unterschritten wird.
+> 💡 **Tipp: "So bestimmst du eine `range()`-Folge"**
+>
+> 1. Schreibe den Startwert auf.
+>
+> 2. Addiere jeweils die Schrittweite.
+>
+> 3. Stoppe, bevor der Endwert erreicht oder überschritten wird.
+>
+> 4. Bei einer negativen Schrittweite stoppst du, bevor der Endwert erreicht oder unterschritten wird.
 
 ---
 
-## 5. Übungen zu `range()`
+## Übungen zu `range()`
 
 ### Aufgabe 1: Zahlenfolgen bestimmen
 
@@ -484,7 +488,7 @@ c) Wie muss `range()` geschrieben werden, damit alle geraden Zahlen von 2 bis un
 
 ---
 
-## 6. Programme mit `for`-Schleifen lesen
+## Programme mit `for`-Schleifen lesen
 
 ### Beispiel 1: Text wiederholen
 
@@ -527,6 +531,9 @@ Ausgabe:
 4 mal 3 ist 12
 5 mal 3 ist 15
 ```
+
+---
+## Aufgaben
 
 ### Aufgabe 9: Ausgabe vorhersagen
 
@@ -579,7 +586,7 @@ for i in range(________________):
 
 ---
 
-## 7. Turtle-Zeichnungen mit Schleifen
+## Turtle-Zeichnungen mit Schleifen
 
 Bei Turtle-Zeichnungen wiederholen sich häufig dieselben Bewegungen. Schleifen helfen dabei, geometrische Figuren kurz und übersichtlich zu programmieren.
 
@@ -652,6 +659,8 @@ Die Werte von `i` lauten:
 
 Die Linien werden deshalb immer länger. Es entsteht eine eckige Spirale.
 
+---
+
 ### Aufgabe 12: Figuren mit Schleifen
 
 Zeichne mit einer `for`-Schleife:
@@ -661,30 +670,8 @@ b) ein gleichseitiges Dreieck,
 c) ein regelmässiges Fünfeck,  
 d) ein regelmässiges Achteck.
 
-### Aufgabe 13: Vom langen Code zur Schleife
 
-Verkürze das folgende Programm mithilfe einer `for`-Schleife:
-
-```python
-t.forward(40)
-t.left(60)
-t.forward(40)
-t.left(60)
-t.forward(40)
-t.left(60)
-t.forward(40)
-t.left(60)
-t.forward(40)
-t.left(60)
-t.forward(40)
-t.left(60)
-```
-
-a) Wie oft wiederholt sich das Muster?  
-b) Welche Figur entsteht?  
-c) Welche zwei Anweisungen gehören in den Schleifenkörper?
-
-### Aufgabe 14: Fehler finden
+### Aufgabe 13: Fehler finden
 
 Das folgende Programm soll ein Quadrat zeichnen:
 
@@ -698,30 +685,9 @@ a) Weshalb entsteht kein Quadrat?
 b) Korrigiere die Einrückung.  
 c) Erkläre, wie oft `t.left(90)` im fehlerhaften Programm ausgeführt wird.
 
-### Aufgabe 15: Stern
-
-Ein fünfzackiger Stern kann mit fünf gleich langen Linien und einer Drehung um 144 Grad gezeichnet werden.
-
-Schreibe ein Programm mit einer `for`-Schleife, das einen Stern zeichnet.
-
-### Aufgabe 16: Wachsende Spirale
-
-Untersuche zunächst:
-
-```python
-for laenge in range(10, 110, 10):
-    t.forward(laenge)
-    t.left(90)
-```
-
-a) Welche Werte erhält `laenge`?  
-b) Wie viele Linien werden gezeichnet?  
-c) Verändere Startwert, Endwert oder Schrittweite und beschreibe die Wirkung.  
-d) Erzeuge eine eigene Spirale mit mindestens 20 Linien.
-
 ---
 
-## 8. Verschachtelte `for`-Schleifen
+## Verschachtelte `for`-Schleifen
 
 Manchmal wird eine Wiederholung innerhalb einer anderen Wiederholung benötigt. Dann verwenden wir eine **verschachtelte Schleife**.
 
@@ -781,7 +747,7 @@ for i in range(12):
 
 Die Einrückung zeigt, dass `t.left(30)` zur äusseren Schleife gehört, aber nicht zur inneren Schleife.
 
-### Aufgabe 17: Verschachtelte Schleife lesen
+### Aufgabe 14: Verschachtelte Schleife lesen
 
 ```python
 for i in range(2):
@@ -794,7 +760,7 @@ b) Welche Werte erhält `j`?
 c) Notiere die vollständige Ausgabe.  
 d) Wie oft wird `print(i, j)` insgesamt ausgeführt?
 
-### Aufgabe 18: Anzahl Wiederholungen bestimmen
+### Aufgabe 14: Anzahl Wiederholungen bestimmen
 
 Wie oft wird jeweils die eingerückte Anweisung ausgeführt?
 
@@ -814,7 +780,7 @@ for i in range(2, 6):
         print(i, j)
 ```
 
-### Aufgabe 19: Kleines Einmaleins
+### Aufgabe 15: Kleines Einmaleins
 
 Ergänze das Programm so, dass das kleine Einmaleins von 1 bis 10 ausgegeben wird:
 
@@ -832,29 +798,11 @@ a) Welche Aufgabe hat die äussere Schleife?
 b) Welche Aufgabe hat die innere Schleife?  
 c) Weshalb wird am Ende jeder Zeile ein leeres `print()` benötigt?
 
-### Aufgabe 20: Turtle-Muster verändern
 
-Gegeben ist das Programm mit zwölf Quadraten:
-
-```python
-for i in range(12):
-    for j in range(4):
-        t.forward(60)
-        t.left(90)
-
-    t.left(30)
-```
-
-Experimentiere mit folgenden Änderungen:
-
-a) Zeichne 18 Quadrate. Welcher Drehwinkel passt, damit eine volle Umdrehung entsteht?  
-b) Ersetze das Quadrat durch ein Dreieck.  
-c) Verändere die Seitenlänge.  
-d) Entwirf ein eigenes Muster aus zwei verschachtelten Schleifen.
 
 ---
 
-## 9. Typische Fehler
+## Typische Fehler
 
 ### Fehler 1: Doppelpunkt vergessen
 
@@ -902,27 +850,7 @@ Soll auch 5 enthalten sein, muss der Endwert 6 verwendet werden:
 range(1, 6)
 ```
 
-### Fehler 4: Falsche Richtung
-
-```python
-range(10, 0)
-```
-
-liefert keine Werte, weil standardmässig vorwärts gezählt wird. Zum Rückwärtszählen braucht es eine negative Schrittweite:
-
-```python
-range(10, 0, -1)
-```
-
-### Fehler 5: Schrittweite 0
-
-```python
-range(1, 10, 0)
-```
-
-Eine Schrittweite von 0 ist nicht erlaubt. Der Wert würde sich nie verändern.
-
-### Fehler 6: Falsche Einrückung bei verschachtelten Schleifen
+### Fehler 4: Falsche Einrückung bei verschachtelten Schleifen
 
 ```python
 for i in range(3):
@@ -934,7 +862,7 @@ Jede zusätzliche Verschachtelung benötigt eine weitere Einrückung.
 
 ---
 
-## 10. Zusammenfassung
+## Zusammenfassung
 
 !!! summary "Das Wichtigste in Kürze"
     - Eine `for`-Schleife wiederholt einen eingerückten Codeblock.
@@ -948,7 +876,7 @@ Jede zusätzliche Verschachtelung benötigt eine weitere Einrückung.
     - Verschachtelte Schleifen führen eine Wiederholung innerhalb einer anderen Wiederholung aus.
     - Turtle-Zeichnungen lassen sich mit Schleifen kurz, übersichtlich und flexibel programmieren.
 
-## 11. Begriffe
+## Begriffe
 
 | Begriff | Bedeutung |
 |---|---|
