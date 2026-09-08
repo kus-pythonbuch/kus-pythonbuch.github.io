@@ -1,3 +1,11 @@
+---
+title: "for-Schleife"
+subtitle: "Programmieren mit Python"
+author: "Theresa Luternauer & Julia Imhof"
+date: "HS 2026/27"
+---
+
+
 # Wiederholungen mit der `for`-Schleife
 
 ## Worum geht es?
@@ -7,7 +15,6 @@ Computer eignen sich besonders gut dazu, wiederkehrende Aufgaben automatisch aus
 Du lernst ausserdem die Funktion `range()` genauer kennen. Mit `range()` kannst du nicht nur bei 0 beginnen und in Einerschritten zählen, sondern auch einen Startwert und eine Schrittweite festlegen.
 
 ## Lernziele
-
 Nach diesem Kapitel kannst du …
 
 - erklären, warum Wiederholungen beim Programmieren wichtig sind,
@@ -532,7 +539,7 @@ Ausgabe:
 5 mal 3 ist 15
 ```
 
----
+
 ## Aufgaben
 
 ### Aufgabe 9: Ausgabe vorhersagen
