@@ -1,6 +1,6 @@
 ---
-title: "for-Schleife"
-subtitle: "Programmieren mit Python"
+title: "Schleifen I"
+subtitle: "Die for-Schleife"
 author: "Theresa Luternauer & Julia Imhof"
 date: "HS 2026/27"
 ---

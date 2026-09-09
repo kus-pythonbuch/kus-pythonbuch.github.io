@@ -1,6 +1,6 @@
 ---
-title: "Variablen und Datentypen"
-subtitle: "Programmieren mit Python"
+title: "Variablen"
+subtitle: "und Datentypen, print(), input()"
 author: "Theresa Luternauer & Julia Imhof"
 date: "HS 2026/27"
 ---
