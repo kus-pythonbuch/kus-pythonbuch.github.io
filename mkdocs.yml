@@ -9,7 +9,7 @@ nav:
   - Start: index.md
   - Einführung: einfuehrung.md
   - Variablen: variablen-und-datentypen.md
-  - Schleife: schleifen.md
+  - Schleifen: schleifen.md
   - Funktionen ohne Rückgabewert: funktionen-ohne-rueckgabewert.md
   - Bedingungen: bedingungen.md
   - Verzweigung: verzweigung.md
