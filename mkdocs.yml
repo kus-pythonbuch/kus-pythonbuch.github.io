@@ -8,8 +8,8 @@ nav:
   - Cheatsheet: cheatsheet.md
   - Start: index.md
   - Einführung: einfuehrung.md
-  - Variablen und Datentypen: variablen-und-datentypen.md
-  - for-Schleife: schleifen.md
+  - Variablen: variablen-und-datentypen.md
+  - Schleife: schleifen.md
   - Funktionen ohne Rückgabewert: funktionen-ohne-rueckgabewert.md
   - Bedingungen: bedingungen.md
   - Verzweigung: verzweigung.md

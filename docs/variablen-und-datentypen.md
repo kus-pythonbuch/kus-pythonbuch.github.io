@@ -1,6 +1,6 @@
 ---
 title: "Variablen"
-subtitle: "und Datentypen, print(), input()"
+subtitle: "Datentypen, print(), input()"
 author: "Theresa Luternauer & Julia Imhof"
 date: "HS 2026/27"
 ---
