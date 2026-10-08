@@ -500,14 +500,6 @@ Das ist aber unnötig, da `input()` bereits einen `str` liefert.
 
 Bestimme nach jeder Anweisung die Werte von `x` und `y`.
 
-``` python
-x = 5
-y = x + 3
-x = 10
-y = y + x
-x = x - 4
-```
-
   Anweisung         `x`     `y`
   ------------- ------- -------
   Start           undef   undef
