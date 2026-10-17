@@ -1,5 +1,7 @@
 # Bedingungen
 
+Soll ein Programm eine Entscheidung treffen, muss es Aussagen überprüfen können. In diesem Kapitel lernst du Bedingungen kennen, die entweder `True` oder `False` ergeben, und untersuchst, wie Vergleiche in Python funktionieren.
+
 Programme müssen häufig überprüfen, ob eine bestimmte Aussage zutrifft oder nicht. Solche Aussagen nennt man **Bedingungen**.
 
 Eine Bedingung kann immer genau einen von zwei Wahrheitswerten haben:

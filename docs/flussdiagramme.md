@@ -7,6 +7,8 @@ date: "HS 2026/27"
 
 # Flussdiagramme
 
+Bevor du ein Programm schreibst, hilft es, seinen Ablauf sichtbar zu machen. Du lernst die wichtigsten Symbole von Flussdiagrammen kennen und stellst damit Anweisungen, Entscheidungen und Wiederholungen übersichtlich dar.
+
 Ein Programm besteht aus Anweisungen, die in einer bestimmten
 Reihenfolge ausgeführt werden. Mit einem **Flussdiagramm** kann dieser
 Programmablauf grafisch dargestellt werden.

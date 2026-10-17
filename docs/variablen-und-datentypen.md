@@ -7,6 +7,8 @@ date: "HS 2026/27"
 
 # Variablen und Datentypen
 
+Programme müssen Informationen speichern und verarbeiten können. In diesem Kapitel lernst du Variablen und wichtige Datentypen kennen. Du erfährst, wie Werte zugewiesen, verändert und in einfachen Python-Programmen verwendet werden.
+
 ## Lernziele
 
 Nach diesem Kapitel kannst du ...
@@ -16,8 +18,6 @@ Nach diesem Kapitel kannst du ...
 -   geeignete Variablennamen wählen.
 -   die wichtigsten Datentypen in Python unterscheiden.
 -   einfache Programme mit Variablen Schritt für Schritt nachvollziehen.
-
-[📄 **Kapitel als PDF herunterladen**](assets/pdf/variablen-und-datentypen.pdf)
 
 ------------------------------------------------------------------------
 
@@ -45,7 +45,7 @@ Die Ausgabe lautet:
 15
 ```
 
-> 💡 **Merke:**
+> **Merke:**
 > Eine Variable ist ein benannter Speicherplatz für einen Wert. Über ihren Namen kann im Programm auf diesen Wert zugegriffen werden. [![Variable als Platzhalter](assets/images/variable.png)](assets/images/variable.png)
 
 *Variable als Platzhalter für Werte*
@@ -87,7 +87,7 @@ x = x + 4
 
 Nach der ersten Zeile gilt `x → 11`. In der zweiten Zeile wird zuerst die rechte Seite ausgewertet: `x + 4 → 11 + 4 → 15`. Anschliessend wird der bisherige Wert von `x` durch `15` ersetzt.
 
-> 💡 **Merke:**
+> **Merke:**
 > Bei einer Zuweisung wird immer zuerst die **rechte Seite berechnet**. Das Ergebnis wird danach in der Variable auf der **linken Seite gespeichert**.
 
 ### Unterschied zur Mathematik
@@ -153,7 +153,7 @@ a = b / 7
 
 `undef` bedeutet, dass einer Variable noch kein Wert zugewiesen wurde.
 
-> 💡 **Tipp:**
+> **Tipp:**
 > Wenn du ein Programm von Hand analysierst, führe die Anweisungen **von oben nach unten** aus und aktualisiere nach jeder Zuweisung deine Variablentabelle.
 
 ------------------------------------------------------------------------
@@ -208,7 +208,7 @@ seitenlaenge = 100
 maximale_punktzahl = 50
 ```
 
-> 💡 **Merke:**
+> **Merke:**
 > Gute Variablennamen machen ein Programm leichter lesbar und verständlich.
 
 ------------------------------------------------------------------------
@@ -244,7 +244,7 @@ groesse = 1.72
 temperatur = 21.5
 ```
 
-> 💡 **Achtung:**
+> **Achtung:**
 > Python verwendet bei Dezimalzahlen einen **Punkt** und kein Komma: `3.5` statt `3,5`.
 
 ### Texte -- `str`
@@ -258,7 +258,7 @@ text = "5"
 
 Die Werte `5` und `"5"` sehen ähnlich aus, besitzen aber unterschiedliche Datentypen: `5` ist eine Zahl, `"5"` ist ein Text.
 
-> 💡 **Merke:**
+> **Merke:**
 > Texte müssen in Python in Anführungszeichen stehen.
 
 ### Wahrheitswerte -- `bool`
@@ -292,7 +292,7 @@ print(zahl * zahl)
 
 Hier ist `zahl` eine ganze Zahl (`int`), mit der gerechnet werden kann. Dagegen ist `"5"` ein String. Nicht jede Rechenoperation, die mit Zahlen möglich ist, ist deshalb auch mit Texten sinnvoll oder erlaubt.
 
-> 💡 **Merke:**
+> **Merke:**
 > Nicht nur der gespeicherte Wert ist wichtig, sondern auch sein **Datentyp**.
 
 ------------------------------------------------------------------------
@@ -370,7 +370,7 @@ Ich heisse Lena und ich bin 15 Jahre alt.
 
 Python setzt zwischen den einzelnen, durch Kommas getrennten Teilen automatisch ein Leerzeichen. Dabei können auch unterschiedliche Datentypen gemeinsam ausgegeben werden. Im Beispiel ist `name` ein `str` und `alter` ein `int`.
 
-> 💡 **Merke:**
+> **Merke:**
 > Mit `print()` können mehrere Texte und Variablen gemeinsam ausgegeben werden.
 > Die einzelnen Teile werden durch **Kommas** getrennt. Python fügt bei der Ausgabe automatisch Leerzeichen dazwischen ein.
 >
@@ -416,7 +416,7 @@ print(type(alter))
 
 Gibt man beispielsweise `15` ein, ist `alter` trotzdem ein `str` und keine Zahl. Der Befehl `type()` gibt den Datentyp einer Variablen zurück.
 
-> 💡 **Merke:**
+> **Merke:**
 > Die Funktion `input()` liefert immer einen Wert vom Datentyp **`str`**.
 > Soll mit der Eingabe gerechnet werden, muss sie zuerst in den passenden Datentyp umgewandelt werden.
 
@@ -487,7 +487,7 @@ name = str(input("Wie heisst du? "))
 
 Das ist aber unnötig, da `input()` bereits einen `str` liefert.
 
-> 💡 **Merke:**  
+> **Merke:**  
 > Welche Umwandlung benötigt wird, hängt davon ab, was mit der Eingabe gemacht werden soll:
 >
 > `name = input("Name: ")` → `str`  
@@ -601,7 +601,7 @@ print("Summe:", summe)
 
 # Zusammenfassung
 
-> 💡 **Merke**
+> **Merke**
 >
 > -   Eine **Variable** ist ein benannter Speicherplatz für einen Wert.
 > -   Mit `=` wird einer Variable ein Wert **zugewiesen**.

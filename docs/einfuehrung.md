@@ -9,6 +9,8 @@ date: "HS 2026/27"
 
 # Einführung ins Programmieren mit Python
 
+Was ist ein Algorithmus, und wie führt ein Computer unsere Anweisungen aus? Du lernst die Grundlagen der Programmierung kennen, schreibst erste Python-Anweisungen mit `turtle` und erfährst, wie du Fehler erkennst und behebst.
+
 ## Lernziele
 
 Nach diesem Kapitel kannst du …
@@ -19,8 +21,6 @@ Nach diesem Kapitel kannst du …
 - Kommentare in Python sinnvoll einsetzen.
 - einfache Fehler in Programmen erkennen und systematisch suchen.
 
-
-[📄 Kapitel als PDF herunterladen](assets/pdf/einfuehrung.pdf)
 ---
 
 ## Was ist ein Algorithmus?
@@ -34,7 +34,7 @@ Auch im Alltag begegnen uns Algorithmen, zum Beispiel:
 
 In digitalen Geräten und Anwendungen werden Algorithmen in Programmiersprachen formuliert. Sie kommen zum Beispiel in Computern, Smartphones, Navigationsgeräten, Ampeln, Fahrassistenzsystemen, Suchmaschinen und Online-Shops zum Einsatz.
 
-> 💡 **Merke:**  
+> **Merke:**  
 > Ein Algorithmus beschreibt **Schritt für Schritt**, wie ein Problem gelöst oder eine Aufgabe ausgeführt wird.
 
 ---
@@ -101,7 +101,7 @@ print("Hallo")
 
 Die Syntax ist korrekt. Die Semantik des Befehls ist: Der Text `Hallo` wird ausgegeben.
 
-> 💡 **Merke:**  
+> **Merke:**  
 > **Syntax** = Wie wird etwas korrekt geschrieben?  
 > **Semantik** = Was bedeutet der Code und was bewirkt er?
 
@@ -121,13 +121,13 @@ Eine **Entwicklungsumgebung** ist ein Programm oder eine Webseite, in der Progra
 
 ---
 
-# Programmieren mit Python Turtle
+## Programmieren mit Python Turtle
 
 Zum Einstieg verwenden wir das Python-Modul `turtle`. Damit können wir eine virtuelle Schildkröte über eine Zeichenfläche bewegen und dabei Linien und Figuren zeichnen.
 
 Ein **Modul** ist eine Sammlung von bereits vorhandenen Funktionen und Befehlen, die in einem Programm verwendet werden können.
 
-## Grundgerüst
+### Grundgerüst
 
 ```python
 import turtle
@@ -187,7 +187,7 @@ t.forward(50)
 
 ---
 
-## Kommentare
+### Kommentare
 
 Kommentare sind Hinweise im Programmcode, die von Python nicht ausgeführt werden.
 
@@ -211,16 +211,16 @@ Kommentare helfen dabei,
 - wichtige Stellen zu erklären,
 - einen Programmablauf zu planen.
 
-> 💡 **Merke:**  
+> **Merke:**  
 > Kommentare sind für Menschen gedacht, nicht für den Computer.
 
 ---
 
-# Programme lesen
+### Programme lesen
 
 Bevor ein Programm ausgeführt wird, sollte man versuchen, seinen Ablauf zu verstehen.
 
-## Beispiel 1
+#### Beispiel 1
 
 ```python
 import turtle
@@ -240,7 +240,7 @@ t.backward(100)
 - Wo befindet sich die Turtle am Schluss?
 - In welche Richtung schaut sie?
 
-## Beispiel 2
+#### Beispiel 2
 
 ```python
 import turtle
@@ -261,12 +261,12 @@ t.left(120)
 - Wo befindet sich die Turtle am Schluss?
 - In welche Richtung schaut sie?
 
-> 💡 **Tipp:**  
+> **Tipp:**  
 > Zu Beginn befindet sich die Turtle in der Mitte der Zeichenfläche und schaut nach rechts.
 
 ---
 
-# Programme testen
+### Programme testen
 
 Nachdem du ein Programm zuerst gedanklich untersucht hast, kannst du es in einer Entwicklungsumgebung ausführen.
 
@@ -280,13 +280,13 @@ Programme zu lesen und ihren Ablauf vorherzusagen ist eine wichtige Fähigkeit b
 
 ---
 
-# Debugging
+## Debugging
 
 Beim Programmieren können unterschiedliche Fehler entstehen: ein Tippfehler, ein falscher Befehl oder eine falsche Überlegung.
 
 Solche Fehler werden häufig als **Bugs** bezeichnet. Das systematische Suchen und Beheben von Fehlern nennt man **Debugging**.
 
-## Vorgehen beim Debugging
+### Vorgehen beim Debugging
 
 1. **Fehler bemerken**  
    Das Programm startet nicht oder liefert ein unerwartetes Ergebnis.
@@ -299,7 +299,7 @@ Solche Fehler werden häufig als **Bugs** bezeichnet. Das systematische Suchen u
    
 ---
 
-## Hilfsmittel beim Debugging
+### Hilfsmittel beim Debugging
 
 ### Fehlermeldungen lesen
 
@@ -355,15 +355,15 @@ t.left(60)
 
 Der Befehl ist korrekt geschrieben. Soll die Turtle jedoch für ein Quadrat um 90° drehen, ist die gewählte Zahl inhaltlich falsch.
 
-> 💡 **Merke:**  
+> **Merke:**  
 > Ein Programm kann syntaktisch korrekt sein und trotzdem ein falsches Ergebnis liefern.
 
 
 ---
 
-# Aufgaben
+## Aufgaben
 
-## Aufgabe 1 – Programme lesen
+### Aufgabe 1 – Programme lesen
 
 Untersuche die beiden Turtle-Programme oben, ohne sie auszuführen.
 
@@ -375,9 +375,9 @@ Untersuche die beiden Turtle-Programme oben, ohne sie auszuführen.
 
 ---
 
-# Zusammenfassung
+## Zusammenfassung
 
-> 💡 **Merke**
+> **Merke**
 >
 > - Ein **Algorithmus** ist eine eindeutige Schritt-für-Schritt-Anleitung.
 > - Ein **Computerprogramm** ist ein Algorithmus, der in einer Programmiersprache formuliert wurde.

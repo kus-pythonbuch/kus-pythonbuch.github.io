@@ -1,0 +1,13 @@
+Die folgenden Kapiteldateien waren im vorliegenden Projektarchiv leer. Diese Texte kannst du nach der jeweiligen Hauptüberschrift einfügen, sobald du die Kapitel erstellst.
+
+Funktionen mit Rückgabewert (funktionen.md):
+Eine Funktion kann nicht nur Anweisungen ausführen, sondern auch ein Ergebnis liefern. Du lernst, wie du mit `return` Werte zurückgibst und diese in anderen Teilen deines Programms weiterverwendest.
+
+Listen (listen.md):
+Wenn ein Programm mehrere Werte verwalten soll, sind einzelne Variablen oft unpraktisch. In diesem Kapitel lernst du Listen kennen und erfährst, wie du ihre Elemente lesen, verändern und mit Schleifen verarbeiten kannst.
+
+Dictionaries (dictionaries.md):
+Manchmal möchten wir Informationen nicht über ihre Position, sondern über einen passenden Schlüssel finden. Du lernst Dictionaries kennen und verwendest Schlüssel-Wert-Paare, um Daten übersichtlich zu speichern und abzurufen.
+
+while-Schleife (while-schleife.md):
+Nicht jede Wiederholung hat eine vorher bekannte Anzahl Durchläufe. Mit der `while`-Schleife führst du Anweisungen aus, solange eine Bedingung erfüllt ist. Du lernst, solche Schleifen zu planen und Endlosschleifen zu vermeiden.

@@ -13,7 +13,7 @@ function addChapterPdfButton() {
   link.href = existing ? existing.href : new URL('../assets/pdf/' + chapter + '.pdf', location.href).href;
   link.setAttribute('download', '');
   link.setAttribute('aria-label', 'Kapitel als PDF herunterladen');
-  link.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v13m-5-5 5 5 5-5M4 20h16"/></svg><span>PDF herunterladen</span>';
+  link.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12m-5-5 5 5 5-5M5 20h14"/></svg><span>PDF</span>';
   title.before(link);
   if (existing) {
     const paragraph = existing.closest('p');

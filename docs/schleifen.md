@@ -8,6 +8,8 @@ date: "HS 2026/27"
 
 # Wiederholungen mit der `for`-Schleife
 
+Manche Anweisungen müssen mehrfach ausgeführt werden. Mit der `for`-Schleife kannst du solche Wiederholungen präzise steuern. Du lernst, wie Schleifenvariablen und `range()` funktionieren und wie du damit übersichtliche Programme schreibst.
+
 ## Worum geht es?
 
 Computer eignen sich besonders gut dazu, wiederkehrende Aufgaben automatisch auszuführen. In diesem Kapitel lernst du die `for`-Schleife kennen. Mit ihr kannst du festlegen, **wie oft** ein Codeblock ausgeführt werden soll.
@@ -135,7 +137,7 @@ for i in range(3):
 print("wird nur einmal ausgeführt")
 ```
 
-> 💡 **Achtung:**
+> **Achtung:**
 > Nach dem Doppelpunkt müssen alle Anweisungen eingerückt werden, die wiederholt werden sollen. Eine nicht mehr eingerückte Anweisung gehört nicht zur Schleife.
 
 ---
@@ -167,7 +169,7 @@ Die Schleifenvariable erhält in jedem Schleifendurchgang den nächsten Wert aus
 | 3. Durchgang | 2 |
 | 4. Durchgang | 3 |
 
-> 💡 **Merke: "Zählen ab 0" **  
+> **Merke: "Zählen ab 0" **  
 > `range(4)` erzeugt die Werte 0, 1, 2 und 3. Die Schleife hat vier Durchgänge, obwohl der letzte Wert der Schleifenvariable 3 ist.
 
 Der Name der Schleifenvariable kann selbst gewählt werden. Häufig werden kurze Namen wie `i` verwendet:
@@ -221,7 +223,7 @@ range(start, stop)
 range(start, stop, schrittweite)
 ```
 
-> 💡 **Achtung: "Der Endwert ist nicht enthalten" **
+> **Achtung: "Der Endwert ist nicht enthalten" **
 > Der Wert `stop` gehört nie zur erzeugten Zahlenfolge. `range()` hört unmittelbar vor dem Endwert auf.
 
 ### `range(stop)`
@@ -368,7 +370,7 @@ Ausgabe:
 Start!
 ```
 
-> 💡 **Achtung: "Richtung und Schrittweite müssen zusammenpassen" **
+> **Achtung: "Richtung und Schrittweite müssen zusammenpassen" **
 > Soll von einer grösseren zu einer kleineren Zahl gezählt werden, muss die Schrittweite negativ sein. `range(5, 0)` liefert keine Werte, weil die Standardschrittweite `+1` vom Endwert wegführt.
 
 ### Die drei Formen im Vergleich
@@ -379,7 +381,7 @@ Start!
 | `range(start, stop)` | angegeben | nicht enthalten | 1 |
 | `range(start, stop, schrittweite)` | angegeben | nicht enthalten | angegeben |
 
-> 💡 **Tipp: "So bestimmst du eine `range()`-Folge"**
+> **Tipp: "So bestimmst du eine `range()`-Folge"**
 >
 > 1. Schreibe den Startwert auf.
 >

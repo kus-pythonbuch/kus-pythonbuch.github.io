@@ -1,5 +1,7 @@
 # Verzweigungen
 
+Programme sollen nicht immer dieselben Anweisungen ausführen. Mit `if` und `else` können sie abhängig von einer Bedingung unterschiedliche Wege einschlagen. Du lernst, solche Verzweigungen zu lesen und selbst zu programmieren.
+
 Im vorherigen Kapitel haben wir Bedingungen kennengelernt. Eine Bedingung ist entweder `True` oder `False`.
 
 Nun verwenden wir diesen Wahrheitswert, um den **Ablauf eines Programms zu steuern**. Ein Programm kann abhängig von einer Bedingung unterschiedliche Wege einschlagen. Dies nennt man eine **Verzweigung**.

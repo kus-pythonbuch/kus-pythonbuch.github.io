@@ -1,20 +1,248 @@
-/* Python-Unterlagen – ruhiges, grosszügiges Design */
-:root { --md-primary-fg-color: #244d86; --md-accent-fg-color: #287ba3; }
-@media screen and (min-width: 76.25em) { .md-grid { max-width: 88rem; } }
-.md-typeset { font-size: .85rem; line-height: 1.78; }
-.md-typeset h1 { color: #244d86; font-size: 2.05rem; font-weight: 650; letter-spacing: -.025em; margin-bottom: 1.15em; }
-.md-typeset h2 { font-size: 1.45rem; font-weight: 650; margin-top: 2.2em; padding-bottom: .3em; border-bottom: 1px solid #e5ebf2; }
-.md-typeset h3 { font-size: 1.13rem; font-weight: 650; margin-top: 1.8em; }
-.md-typeset p, .md-typeset ul, .md-typeset ol { margin-bottom: 1.1em; }
-.md-typeset pre { border-radius: 10px; }
+/* Pythonbuch – bereinigtes Stylesheet, Oktober 2026 */
+:root { --md-primary-fg-color: #284d7b; --md-accent-fg-color: #287ba3; }
+@media (min-width: 76.25em) { .md-grid { max-width: 84rem; } }
+
+/* Lesespalte und Typografie */
+.md-content__inner.md-typeset {
+  max-width: 940px; margin: 0 auto; padding: 1.5rem 1.6rem 3rem;
+  box-sizing: border-box;
+}
+.md-typeset { font-size: .84rem; line-height: 1.65; }
+.md-typeset h1 { color: var(--md-default-fg-color); font-size: 1.75rem; font-weight: 650; letter-spacing: -.025em; margin: 0 0 1rem; }
+.md-typeset h2 { font-size: 1.27rem; font-weight: 650; margin: 2rem 0 .7rem; padding: 0; border: 0; }
+.md-typeset h3 { font-size: 1.06rem; font-weight: 650; margin: 1.45rem 0 .55rem; }
+.md-typeset p, .md-typeset ul, .md-typeset ol { margin-top: 0; margin-bottom: .9rem; }
+.md-typeset .highlight, .md-typeset pre { border-radius: 9px; }
+.md-typeset .highlight { border: 1px solid var(--md-default-fg-color--lightest); overflow: hidden; }
 .md-typeset table:not([class]) { border-radius: 8px; overflow: hidden; }
-.md-typeset table:not([class]) th { background: #eaf1f9; color: #213f64; }
-.md-typeset blockquote { border-left: 4px solid #4a8eb9; background: #f3f7fc; color: var(--md-default-fg-color); padding: .8em 1.15em; border-radius: 0 9px 9px 0; }
-.md-typeset .admonition, .md-typeset details { border-radius: 9px; }
-img.flowchart { width: 35%; max-width: 400px; height: auto; }
-/* PDF-Schaltfläche wird nur auf der Website ergänzt. */
-.md-typeset .chapter-pdf { float: right; display: inline-flex; align-items: center; gap: .5em; margin: .1em 0 1.4em 1em; padding: .55em 1em; border: 1.5px solid #315da2; border-radius: 9px; color: #315da2; text-decoration: none; font-weight: 650; font-size: .82rem; }
-.md-typeset .chapter-pdf:hover { background: #eef4ff; color: #244d86; }
-.md-typeset .chapter-pdf svg { width: 1.1em; height: 1.1em; fill: none; stroke: currentColor; stroke-width: 1.8; }
-.md-typeset .chapter-pdf + h1 { clear: none; }
-@media screen and (max-width: 600px) { .md-typeset { font-size: .79rem; } .md-typeset .chapter-pdf { float: none; margin: 0 0 1.2em; } }
+.md-typeset table:not([class]) th { background: var(--md-code-bg-color); }
+.md-typeset blockquote { border-left: 3px solid #9db7d2; background: var(--md-code-bg-color); color: var(--md-default-fg-color); padding: .7em 1em; border-radius: 0 8px 8px 0; }
+
+/* Bilder im Kapitel – bei Bedarf per {.img-small} usw. */
+.md-typeset img { max-width: 100%; height: auto; }
+.md-typeset p > img { display: block; max-width: min(100%, 650px); margin: 1.15rem auto; }
+.md-typeset img.img-small { width: 280px; }
+.md-typeset img.img-medium { width: 480px; }
+.md-typeset img.img-large { width: 680px; }
+.md-typeset img.flowchart, img.flowchart { width: 35%; max-width: 400px; }
+
+/* PDF-Download-Button */
+.md-typeset .chapter-pdf {
+    float: right;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.7rem;
+
+    padding: 0.55rem 1rem;
+    margin: 0 0 1.2rem 1rem;
+
+    border: 1.5px solid #4855bb;
+    border-radius: 10px;
+    background: transparent;
+
+    color: #4855bb;
+    font-size: 0.95rem;
+    font-weight: 600;
+    text-decoration: none;
+
+    transition: background 0.2s ease;
+}
+
+.md-typeset .chapter-pdf svg {
+    width: 1.25rem;
+    height: 1.25rem;
+    fill: none;
+    stroke: currentColor;
+    stroke-width: 1.7;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+}
+
+.md-typeset .chapter-pdf:hover {
+    background: #f0f1ff;
+    color: #4855bb;
+}
+
+/* Unterrichtsboxen: bestehendes lesson-boxes.js bleibt unverändert */
+.md-typeset .lesson-box, .md-typeset .admonition, .md-typeset details {
+  --box-color: #a3b6ef; --box-tint: #f3f5fd;
+  margin: 1.15rem 0; border: 1px solid var(--box-color);
+  border-radius: 9px; overflow: hidden; background: var(--md-default-bg-color);
+  box-shadow: 0 2px 8px rgba(30,50,80,.04); font-size: 1em;
+}
+.md-typeset .lesson-box__title, .md-typeset .admonition-title, .md-typeset details > summary {
+  position: relative; margin: 0 !important;
+  padding: .45em 1em .45em 2.75em !important;
+  background: var(--box-tint) !important;
+  color: var(--md-default-fg-color) !important;
+  font-size: .95em; font-weight: 700;
+}
+.md-typeset .lesson-box__title { padding-left: 3.1em !important; }
+.md-typeset .lesson-box__icon {
+  position: absolute; left: 1em; top: 50%; transform: translateY(-50%); font-size: 1em;
+}
+.md-typeset .lesson-box__body { margin: 0 1em; padding: .5em 0 .7em; }
+.md-typeset .lesson-box__body > :first-child { margin-top: 0 !important; }
+.md-typeset .lesson-box__body > :last-child { margin-bottom: 0 !important; }
+.md-typeset .admonition > :not(.admonition-title),
+.md-typeset details > :not(summary) { margin-left: 1em; margin-right: 1em; }
+.md-typeset .admonition > .admonition-title + *,
+.md-typeset details > summary + * { margin-top: .6em; }
+.md-typeset .admonition > :last-child,
+.md-typeset details > :last-child { margin-bottom: .8em; }
+.md-typeset .admonition-title::before, .md-typeset details > summary::before { color: var(--box-color); }
+.md-typeset .lesson-box--tipp, .md-typeset .admonition.tip, .md-typeset details.tip { --box-color:#9bd5ce; --box-tint:#f0faf8; }
+.md-typeset .lesson-box--merke, .md-typeset .admonition.note, .md-typeset details.note { --box-color:#a3b6ef; --box-tint:#f3f5fd; }
+.md-typeset .lesson-box--achtung, .md-typeset .admonition.warning, .md-typeset .admonition.danger, .md-typeset details.warning { --box-color:#e9c58c; --box-tint:#fff8ed; }
+.md-typeset .lesson-box--aufgabe, .md-typeset .admonition.question, .md-typeset .admonition.example, .md-typeset details.question { --box-color:#c4b1e5; --box-tint:#f7f3fc; }
+.md-typeset .admonition.summary, .md-typeset details.summary { --box-color:#a3b6ef; --box-tint:#f3f5fd; }
+
+/* Startseite */
+.md-typeset .course-home { max-width: 100%; }
+.md-typeset .course-eyebrow { margin: 0 0 .65rem; font-size: .7rem; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; color: #718095; }
+.md-typeset .course-hero { max-width: 690px; padding: .8rem 0 1.5rem; }
+.md-typeset .course-hero h1 { font-size: clamp(1.95rem, 3.5vw, 2.65rem); line-height: 1.15; margin: 0 0 .8rem; letter-spacing: -.035em; }
+.md-typeset .course-hero p { font-size: 1.04em; color: var(--md-default-fg-color--light); line-height: 1.7; }
+.md-typeset .course-section-title { margin: .4rem 0 1.1rem; font-size: 1.2rem; }
+.md-typeset .chapter-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 1.1rem; }
+.md-typeset .chapter-card {
+  display: block; overflow: hidden; border: 1px solid var(--md-default-fg-color--lightest);
+  border-radius: 12px; background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color); text-decoration: none;
+  box-shadow: 0 3px 13px rgba(24,43,71,.045);
+  transition: transform .16s ease, box-shadow .16s ease, border-color .16s ease;
+}
+.md-typeset .chapter-card:hover, .md-typeset .chapter-card:focus-visible {
+  transform: translateY(-3px); box-shadow: 0 10px 22px rgba(24,43,71,.12);
+  border-color: #91aac9; color: var(--md-default-fg-color);
+}
+/* Kapitelbilder: einheitliches Format und sanfter Hover */
+.md-typeset .chapter-art {
+  display: block;
+  aspect-ratio: 4 / 3;
+  overflow: hidden;
+  background: var(--md-code-bg-color);
+}
+.md-typeset .chapter-art img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  max-width: none;
+  object-fit: cover;
+  transition: transform .28s ease;
+}
+.md-typeset .chapter-card:hover .chapter-art img,
+.md-typeset .chapter-card:focus-visible .chapter-art img {
+  transform: scale(1.045);
+}
+.md-typeset .chapter-card__content { padding: .95rem 1rem 1.1rem; }
+.md-typeset .chapter-card__content h3 { font-size: .98rem; margin: 0 0 .35rem; font-weight: 700; }
+.md-typeset .chapter-card__content p { color: var(--md-default-fg-color--light); font-size: .8rem; line-height: 1.5; margin: 0; }
+.md-typeset .course-note { margin: 1.6rem 0 0; font-size: .82rem; color: var(--md-default-fg-color--light); }
+.md-typeset .course-note a { font-weight: 650; }
+
+/* Responsive */
+@media (max-width: 900px) { .md-typeset .chapter-grid { grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media (max-width: 600px) {
+  .md-content__inner.md-typeset { padding: 1rem .85rem 2.5rem; }
+  .md-typeset { font-size: .81rem; }
+  .md-typeset .chapter-grid { grid-template-columns: 1fr; gap: .9rem; }
+  .md-typeset .chapter-art { aspect-ratio: 4 / 3; }
+  .md-typeset .chapter-pdf { float: none; margin: 0 0 1rem; }
+}
+@media (prefers-reduced-motion: reduce) { .md-typeset .chapter-card, .md-typeset .chapter-art img { transition: none; } }
+[data-md-color-scheme="slate"] .md-typeset .lesson-box,
+[data-md-color-scheme="slate"] .md-typeset .admonition,
+[data-md-color-scheme="slate"] .md-typeset details { --box-tint: #30384d; }
+
+
+/* Kapiteleinstieg im Stil der Startseite */
+.md-typeset .chapter-hero {
+  margin: 0 0 2.2rem;
+  padding: .6rem 0 1rem;
+}
+
+.md-typeset .chapter-eyebrow {
+  margin: 0 0 .7rem;
+  color: #718095;
+  font-size: .7rem;
+  font-weight: 750;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+
+.md-typeset .chapter-hero h1 {
+  font-size: clamp(1.95rem, 3.5vw, 2.65rem);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -.035em;
+  margin: 0 0 .85rem;
+}
+
+.md-typeset .chapter-intro {
+  color: var(--md-default-fg-color--light);
+  font-size: 1.04em;
+  line-height: 1.7;
+  max-width: 690px;
+  margin: 0;
+}
+
+
+/* Kapitelbezeichnung links, PDF-Button rechts */
+.md-typeset .chapter-hero__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.2rem;
+}
+
+.md-typeset .chapter-hero__top .chapter-eyebrow {
+    margin: 0;
+}
+
+/* PDF-Button innerhalb des Kapitelkopfs */
+.md-typeset .chapter-hero__top .chapter-pdf {
+    float: none;
+    margin: 0;
+    flex-shrink: 0;
+}
+
+@media (max-width: 600px) {
+    .md-typeset .chapter-hero__top {
+        gap: 0.6rem;
+    }
+}
+
+/* Kapitelbilder: einheitliches Format ohne Verzerrung */
+.md-typeset .chapter-art {
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
+    display: block;
+    background: transparent;
+}
+
+.md-typeset .chapter-art img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.25s ease;
+}
+
+/* Dezenter Zoom beim Hover */
+.md-typeset .chapter-card:hover .chapter-art img {
+    transform: scale(1.04);
+}
+
+/* Einheitliche Kartenhöhe */
+.md-typeset .chapter-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.md-typeset .chapter-card__content {
+    flex: 1;
+}

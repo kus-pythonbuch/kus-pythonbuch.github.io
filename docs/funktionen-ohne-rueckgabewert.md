@@ -7,6 +7,8 @@ date: "HS 2026/27"
 
 # Funktionen ohne Rückgabewert
 
+Grössere Programme werden verständlicher, wenn wir sie in kleine Bausteine aufteilen. Du lernst, eigene Funktionen zu definieren und aufzurufen, Parameter einzusetzen und damit beispielsweise Turtle-Zeichnungen einfacher zu strukturieren.
+
 ## Worum geht es?
 
 In diesem Kapitel lernst du, längere Programme in kleine, übersichtliche Bausteine zu zerlegen. In Python nennen wir solche Bausteine **Funktionen**.
