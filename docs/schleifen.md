@@ -169,8 +169,8 @@ Die Schleifenvariable erhält in jedem Schleifendurchgang den nächsten Wert aus
 | 3. Durchgang | 2 |
 | 4. Durchgang | 3 |
 
-> **Merke: "Zählen ab 0" **  
-> `range(4)` erzeugt die Werte 0, 1, 2 und 3. Die Schleife hat vier Durchgänge, obwohl der letzte Wert der Schleifenvariable 3 ist.
+> **Merke:**  
+> `range(4)` erzeugt die Werte 0, 1, 2 und 3. Die Schleife hat vier Durchgänge, obwohl der letzte Wert der Schleifenvariable 3 ist. Startwert ist immer 0.
 
 Der Name der Schleifenvariable kann selbst gewählt werden. Häufig werden kurze Namen wie `i` verwendet:
 
@@ -223,8 +223,8 @@ range(start, stop)
 range(start, stop, schrittweite)
 ```
 
-> **Achtung: "Der Endwert ist nicht enthalten" **
-> Der Wert `stop` gehört nie zur erzeugten Zahlenfolge. `range()` hört unmittelbar vor dem Endwert auf.
+> **Achtung:**
+>  Der Wert `stop` gehört nie zur erzeugten Zahlenfolge. `range()` hört unmittelbar vor dem Endwert auf.
 
 ### `range(stop)`
 
