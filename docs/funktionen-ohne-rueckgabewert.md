@@ -323,30 +323,43 @@ Definiere eine Funktion für eine der folgenden Figuren:
 
 Die Funktion soll keine Parameter besitzen. Gib ihr einen Namen, der ihre Aufgabe verständlich beschreibt.
 
-### Aufgabe 8: Eine Häuserreihe modular planen
+### Aufgabe 8: Ein Quartier modular planen
 
-Die Turtle soll eine Strasse mit drei gleichen Häusern zeichnen. Jedes Haus besteht aus einem Quadrat mit der Seitenlänge 80 und einem gleichseitigen Dach. Zwischen zwei Häusern liegt ein Abstand von 20 Schritten.
+Die Turtle soll ein ganzes Quartier zeichnen: vier Strassen übereinander, in jeder Strasse fünf gleiche Häuser. Jedes Haus besteht aus quadratischen Wänden mit der Seitenlänge 50 und einem gleichseitigen Dreieck als Dach.
 
 Bevor du programmierst, zerlegst du die Aufgabe in Teilaufgaben. Der folgende **Bausteinplan** zeigt, welche Funktion welche kleineren Funktionen verwendet:
 
 ```text
-strasse()
-├── haus()
-│   ├── quadrat()
-│   ├── zum_dach()
-│   ├── dach()
-│   └── zurueck_zum_boden()
-└── zum_naechsten_haus()
+quartier()
+└── strasse()
+    └── haus()
+        ├── quadrat()
+        └── dreieck()
 ```
 
-Jedes Haus beginnt in der linken unteren Ecke. Die Turtle schaut dabei nach rechts. Nach dem Zeichnen eines Hauses soll die Turtle wieder an genau dieser Stelle stehen und nach rechts schauen.
+Beginne dein Programm mit dieser Initialisierung:
+
+```python
+import turtle
+
+t = turtle.Turtle()
+
+# Initialisierung
+t.penup()
+t.hideturtle()
+t.speed(0)
+t.goto(-200, -200)
+```
+
+Jedes Haus beginnt in der **linken oberen Ecke der Wände**, also dort, wo das Dach beginnt. Die Turtle schaut dabei nach rechts. Nach jedem Baustein soll die Turtle wieder an ihrer Startposition stehen und nach rechts schauen.
 
 a) Beschreibe für jede Funktion im Bausteinplan in einem Satz, welche Teilaufgabe sie erfüllt.  
-b) Programmiere zuerst nur die kleinsten Bausteine `quadrat()`, `zum_dach()`, `dach()`, `zurueck_zum_boden()` und `zum_naechsten_haus()`. Teste jeden Baustein einzeln, indem du ihn aufrufst.  
-c) Setze die Bausteine zur Funktion `haus()` zusammen und teste sie.  
-d) Definiere die Funktion `strasse()`, die mit einer Schleife drei Häuser nebeneinander zeichnet. Das Hauptprogramm soll nur aus dem Aufruf `strasse()` bestehen.  
-e) Alle Häuser sollen nun eine Tür erhalten (20 breit, 40 hoch, 30 Schritte vom linken Rand entfernt). Definiere eine Funktion `tuer()` und baue sie in dein Programm ein. An wie vielen Stellen musst du dein Programm ändern?  
-f) Stell dir vor, du hättest dasselbe Bild ohne eigene Funktionen programmiert. An wie vielen Stellen müsstest du die Tür ergänzen? Erkläre mit diesem Beispiel zwei Vorteile des modularen Programmentwurfs.
+b) Programmiere zuerst die kleinsten Bausteine: `quadrat()` zeichnet die Wände nach unten, `dreieck()` zeichnet das Dach nach oben. Teste jeden Baustein einzeln, indem du ihn aufrufst.  
+c) Setze die beiden Bausteine zur Funktion `haus()` zusammen und teste sie.  
+d) Definiere die Funktion `strasse()`, die mit einer Schleife fünf Häuser nebeneinander zeichnet. Der Abstand von einem Hausanfang zum nächsten beträgt 75 Schritte. Am Ende soll die Turtle wieder am Anfang der Strasse stehen.  
+e) Definiere die Funktion `quartier()`, die vier Strassen übereinander zeichnet. Die Strassen liegen 100 Schritte auseinander. Am Ende soll die Turtle wieder an ihrer Startposition stehen. Das Hauptprogramm besteht nur aus dem Aufruf `quartier()`.  
+f) Wie viele Häuser zeichnet dein Programm? Wie oft wird dabei `quadrat()` aufgerufen? Schätze, wie lang dein Programm ohne eigene Funktionen wäre.  
+g) Alle Häuser sollen grösser werden (Seitenlänge 60). Welche Funktionen musst du ändern? Was musst du zusätzlich anpassen, damit sich die Häuser nicht überlappen? Erkläre mit diesem Beispiel zwei Vorteile des modularen Programmentwurfs.
 
 !!! tip "Tipp"
-    Ein Baustein, der die Turtle bewegt, ohne zu zeichnen, verwendet `t.penup()` und `t.pendown()`. Achte bei jedem Baustein darauf, wo die Turtle am Ende steht und in welche Richtung sie schaut. Nur dann passen die Bausteine zusammen.
+    Schalte den Stift in jedem Zeichenbaustein mit `t.pendown()` ein und am Ende mit `t.penup()` wieder aus. So zeichnet die Turtle keine Linien, wenn sie zum nächsten Haus oder zur nächsten Strasse fährt. Wenn die Wände nach unten gezeichnet werden sollen, muss sich die Turtle mit `t.right(90)` drehen.
