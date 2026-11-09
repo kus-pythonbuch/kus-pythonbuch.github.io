@@ -39,12 +39,11 @@ jobs:
 
       - name: Typst installieren
         run: |
-          VERSION=$(curl -s https://api.github.com/repos/typst/typst/releases/latest | \
-            grep '"tag_name":' | cut -d'"' -f4)
+          VERSION=v0.15.1
 
           echo "Installiere Typst $VERSION"
 
-          curl -L \
+          curl -fL --retry 5 --retry-delay 10 --retry-all-errors \
             "https://github.com/typst/typst/releases/download/$VERSION/typst-x86_64-unknown-linux-musl.tar.xz" \
             -o typst.tar.xz
 
