@@ -42,6 +42,24 @@
       <p>Eigene Befehle definieren und verwenden.</p>
     </div>
   </a>
+  <a class="chapter-card" href="funktionen/">
+    <div class="chapter-art">
+      <img src="assets/images/kapitel-funktionen.png" alt="Illustration zum Kapitel" loading="lazy">
+    </div>
+    <div class="chapter-card__content">
+      <h3>Funktionen mit Input</h3>
+      <p>Funktionen mit Parametern flexibel machen.</p>
+    </div>
+  </a>
+  <a class="chapter-card" href="funktionen_return/">
+    <div class="chapter-art">
+      <img src="assets/images/kapitel-funktionen-mit-rueckgabewert.png" alt="Illustration zum Kapitel" loading="lazy">
+    </div>
+    <div class="chapter-card__content">
+      <h3>Funktionen mit Rückgabewert</h3>
+      <p>Ergebnisse berechnen und zurückgeben.</p>
+    </div>
+  </a>
   <a class="chapter-card" href="bedingungen/">
     <div class="chapter-art">
       <img src="assets/images/kapitel-bedingungen.png" alt="Illustration zum Kapitel" loading="lazy">
@@ -76,15 +94,6 @@
     <div class="chapter-card__content">
       <h3>while-Schleife</h3>
       <p>Wiederholen, solange eine Bedingung gilt.</p>
-    </div>
-  </a>
-  <a class="chapter-card" href="funktionen/">
-    <div class="chapter-art">
-      <img src="assets/images/kapitel-funktionen-mit-rueckgabewert.png" alt="Illustration zum Kapitel" loading="lazy">
-    </div>
-    <div class="chapter-card__content">
-      <h3>Funktionen mit Rückgabewert</h3>
-      <p>Ergebnisse berechnen und zurückgeben.</p>
     </div>
   </a>
   <a class="chapter-card" href="listen/">

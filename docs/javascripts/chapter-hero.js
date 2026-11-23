@@ -11,13 +11,14 @@ function decorateChapterHero() {
     "variablen-und-datentypen": 2,
     "schleifen": 3,
     "funktionen-ohne-rueckgabewert": 4,
-    "bedingungen": 5,
-    "verzweigung": 6,
-    "flussdiagramme": 7,
-    "while-schleife": 8,
-    "funktionen": 9,
-    "listen": 10,
-    "dictionaries": 11
+    "funktionen": 5,
+    "funktionen_return": 6,
+    "bedingungen": 7,
+    "verzweigung": 8,
+    "flussdiagramme": 9,
+    "while-schleife": 10,
+    "listen": 11,
+    "dictionaries": 12
   };
 
   const parts = location.pathname.split("/").filter(Boolean);
