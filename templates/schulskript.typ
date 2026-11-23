@@ -135,6 +135,9 @@
     #set text(
       font: "JetBrains Mono",
       size: 9pt,
+      // Keine Ligaturen: == und >= sollen so aussehen, wie man sie tippt
+      ligatures: false,
+      features: (calt: 0),
     )
     #it
   ]
@@ -153,6 +156,9 @@
     #set text(
       font: "JetBrains Mono",
       size: 9pt,
+      // Keine Ligaturen: == und >= sollen so aussehen, wie man sie tippt
+      ligatures: false,
+      features: (calt: 0),
     )
     #it
   ]
