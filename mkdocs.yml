@@ -10,11 +10,12 @@ nav:
   - Variablen: variablen-und-datentypen.md
   - Schleifen: schleifen.md
   - Funktionen ohne Rückgabewert: funktionen-ohne-rueckgabewert.md
+  - Funktionen mit Input: funktionen.md
+  - Funktionen mit Rückgabewert: funktionen_return.md
   - Bedingungen: bedingungen.md
   - Verzweigung: verzweigung.md
   - Flussdiagramme: flussdiagramme.md
   - while-Schleife: while-schleife.md
-  - Funktionen mit Rückgabewert: funktionen.md
   - Listen: listen.md
   - Dictionaries: dictionaries.md
   - Cheatsheet: cheatsheet.md

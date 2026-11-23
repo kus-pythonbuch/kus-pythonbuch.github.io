@@ -1,11 +1,11 @@
 ---
-title: "Flussdiagramme"
+title: "Funktionen mit Parametern"
 subtitle: "Programmieren mit Python"
 author: "Theresa Luternauer & Julia Imhof"
 date: "HS 2026/27"
 ---
 
-Funktionen mit Parametern
+# Funktionen mit Parametern
 
 Die Funktion `quadrat()` zeichnet immer ein Quadrat mit der Seitenlänge 50:
 
@@ -320,6 +320,52 @@ def haus(groesse):
 
 !!! question "Denkfrage"
     Warum ist es für diese Aufgabe besser, `quadrat(seite)` und `dreieck(seite)` zu programmieren, statt die Seitenlängen direkt als feste Zahlen in die Funktionen zu schreiben?
+
+### Aufgabe 11: Ein flexibles Quartier
+
+Im Kapitel „Funktionen ohne Rückgabewert“ hast du ein Quartier mit festen Zahlen gezeichnet: fünf Häuser pro Strasse, vier Strassen, Seitenlänge 50. Nun soll das Quartier flexibel werden.
+
+```text
+quartier(strassen, haeuser, groesse)
+└── strasse(haeuser, groesse)
+    └── haus(groesse)
+        ├── quadrat(seite)
+        └── dreieck(seite)
+```
+
+Jedes Haus beginnt wieder in der linken oberen Ecke der Wände, die Turtle schaut nach rechts.
+
+a) Programmiere `quadrat(seite)` und `dreieck(seite)` sowie `haus(groesse)`.  
+b) Programmiere `strasse(haeuser, groesse)`. Der Abstand zwischen zwei Häusern soll halb so gross sein wie ein Haus. Am Ende steht die Turtle wieder am Anfang der Strasse.  
+c) Programmiere `quartier(strassen, haeuser, groesse)`. Der Abstand zwischen zwei Strassen soll doppelt so gross sein wie ein Haus. Am Ende steht die Turtle wieder an ihrer Startposition.  
+d) Teste mit `quartier(4, 5, 50)` und `quartier(3, 8, 30)`.  
+e) Welche Zahlen aus der Musterlösung ohne Parameter (`75`, `100`, `75*5`, `100*4`) hast du durch welche Ausdrücke ersetzt?
+
+!!! tip "Tipp"
+    Rechne die Abstände aus den Parametern aus, zum Beispiel `t.forward(groesse + groesse / 2)`. Dann passen die Abstände automatisch, wenn sich die Grösse ändert.
+
+### Aufgabe 12: Ein Gitter aus Quadraten
+
+a) Definiere eine Funktion `reihe(anzahl, seite)`, die `anzahl` Quadrate lückenlos nebeneinander zeichnet. Verwende `quadrat(seite)`. Am Ende soll die Turtle wieder am Anfang der Reihe stehen.  
+b) Definiere eine Funktion `gitter(zeilen, spalten, seite)`, die mehrere Reihen übereinander zeichnet.  
+c) Teste mit `gitter(3, 5, 40)` und `gitter(8, 8, 20)`.  
+d) Erweitere `gitter()` um einen Parameter `farbe`. Welche Funktionen musst du dafür ebenfalls anpassen?
+
+### Aufgabe 13: Eine Blume
+
+Mit `t.circle(radius, winkel)` zeichnet die Turtle einen Kreisbogen. Ein Blütenblatt besteht aus zwei Bögen:
+
+```python
+def blatt(radius):
+    for i in range(2):
+        t.circle(radius, 60)
+        t.left(120)
+```
+
+a) Probiere `blatt(100)` aus und beschreibe die Form.  
+b) Definiere eine Funktion `bluete(anzahl, radius)`, die `anzahl` Blätter rundherum zeichnet. Um wie viel Grad muss sich die Turtle nach jedem Blatt drehen?  
+c) Definiere eine Funktion `blume(anzahl, radius, farbe)`, die einen Stiel und darauf eine Blüte zeichnet.  
+d) Zeichne eine Wiese mit mindestens drei verschiedenen Blumen.
 
 ---
 
